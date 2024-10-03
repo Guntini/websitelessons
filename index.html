@@ -22,20 +22,20 @@
         <a class="menu-toggle rounded" href="#"><i class="fas fa-bars"></i></a>
         <nav id="sidebar-wrapper">
             <ul class="sidebar-nav">
-                <li class="sidebar-brand"><a href="#page-top">Start Bootstrap</a></li>
+                <li class="sidebar-brand"><a href="#page-top">Unilessons</a></li>
                 <li class="sidebar-nav-item"><a href="#page-top">Home</a></li>
-                <li class="sidebar-nav-item"><a href="#about">About</a></li>
-                <li class="sidebar-nav-item"><a href="#services">Services</a></li>
+                <li class="sidebar-nav-item"><a href="#about">Su di noi</a></li>
+                <li class="sidebar-nav-item"><a href="#services">Corsi Offerti</a></li>
                 <li class="sidebar-nav-item"><a href="#portfolio">Portfolio</a></li>
-                <li class="sidebar-nav-item"><a href="#contact">Contact</a></li>
+                <li class="sidebar-nav-item"><a href="#contact">Contatti</a></li>
             </ul>
         </nav>
         <!-- Header-->
         <header class="masthead d-flex align-items-center">
             <div class="container px-4 px-lg-5 text-center">
-                <h1 class="mb-1">Stylish Portfolio</h1>
-                <h3 class="mb-5"><em>A Free Bootstrap Theme by Start Bootstrap</em></h3>
-                <a class="btn btn-primary btn-xl" href="#about">Find Out More</a>
+                <h1 class="mb-1">Unilessons</h1>
+                <h3 class="mb-5"><em>Dove gli esami si trasformano in 30 L</em></h3>
+                <a class="btn btn-primary btn-xl" href="#about">Scopri !</a>
             </div>
         </header>
         <!-- About-->
@@ -43,114 +43,183 @@
             <div class="container px-4 px-lg-5 text-center">
                 <div class="row gx-4 gx-lg-5 justify-content-center">
                     <div class="col-lg-10">
-                        <h2>Stylish Portfolio is the perfect theme for your next project!</h2>
+                        <h2>Unilessons è il meglio per la preparazione dei tuoi esami universitari!</h2>
                         <p class="lead mb-5">
-                            This theme features a flexible, UX friendly sidebar menu and stock photos from our friends at
+                            In questo sito troverai oltre 100 corsi offerti, tramite l'uso del nostro social 
                             <a href="https://unsplash.com/">Unsplash</a>
                             !
                         </p>
-                        <a class="btn btn-dark btn-xl" href="#services">What We Offer</a>
+                        <a class="btn btn-dark btn-xl" href="#services">Come puoi aiutarmi ?</a>
                     </div>
                 </div>
             </div>
         </section>
         <!-- Services-->
-        <section class="content-section bg-primary text-white text-center" id="services">
+        <section id="services" class="content-section bg-primary text-white text-center">
             <div class="container px-4 px-lg-5">
-                <div class="content-section-heading">
-                    <h3 class="text-secondary mb-0">Services</h3>
-                    <h2 class="mb-5">Corsi Offerti</h2>
-                </div>
+                <h2 class="mb-5">Corsi Offerti</h2>
                 <div class="row gx-4 gx-lg-5">
+                    <!-- Facoltà 1 -->
                     <div class="col-lg-3 col-md-6 mb-5 mb-lg-0">
-                        <span class="service-icon rounded-circle mx-auto mb-3"><i class="icon-screen-smartphone"></i></span>
-                        <h4><strong>Responsive</strong></h4>
-                        <p class="text-faded mb-0">Looks great on any screen size!</p>
+                        <a href="javascript:void(0);" onclick="toggleDropdown('facolta-ingegneria-dropdown');" class="service-icon rounded-circle mx-auto mb-3">
+                            <i class="icon-screen-smartphone"></i>
+                        </a>
+                        <h4><strong>Facoltà di Ingegneria</strong></h4>
+                        <p class="text-faded mb-0">Corsi di laurea in Ingegneria meccanica, elettronica, e civile.</p>
+                        <!-- Menu a tendina -->
+                        <ul id="facolta-ingegneria-dropdown" class="dropdown-content" style="display:none;">
+                            <li><a href="https://wa.me/+393285733478?text=Vorrei+informazioni+sul+Corso+di+Laurea+in+Ingegneria+Meccanica" target="_blank">Corso di Laurea in Ingegneria Meccanica</a></li>
+                            <li><a href="https://wa.me/+393285733478?text=Vorrei+informazioni+sul+Corso+di+Laurea+in+Ingegneria+Elettronica" target="_blank">Corso di Laurea in Ingegneria Elettronica</a></li>
+                            <li><a href="https://wa.me/+393285733478?text=Vorrei+informazioni+sul+Corso+di+Laurea+in+Ingegneria+Civile" target="_blank">Corso di Laurea in Ingegneria Civile</a></li>
+                        </ul>
                     </div>
+                    <!-- Facoltà 2 -->
                     <div class="col-lg-3 col-md-6 mb-5 mb-lg-0">
-                        <span class="service-icon rounded-circle mx-auto mb-3"><i class="icon-pencil"></i></span>
-                        <h4><strong>Redesigned</strong></h4>
-                        <p class="text-faded mb-0">Freshly redesigned for Bootstrap 5.</p>
-                    </div>
-                    <div class="col-lg-3 col-md-6 mb-5 mb-md-0">
-                        <span class="service-icon rounded-circle mx-auto mb-3"><i class="icon-like"></i></span>
-                        <h4><strong>Favorited</strong></h4>
-                        <p class="text-faded mb-0">
-                            Millions of users
-                            <i class="fas fa-heart"></i>
-                            Start Bootstrap!
-                        </p>
-                    </div>
-                    <div class="col-lg-3 col-md-6">
-                        <span class="service-icon rounded-circle mx-auto mb-3"><i class="icon-mustache"></i></span>
-                        <h4><strong>Question</strong></h4>
-                        <p class="text-faded mb-0">I mustache you a question...</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- Callout-->
-        <section class="callout">
-            <div class="container px-4 px-lg-5 text-center">
-                <h2 class="mx-auto mb-5">
-                    Welcome to
-                    <em>your</em>
-                    next website!
-                </h2>
-                <a class="btn btn-primary btn-xl" href="https://startbootstrap.com/theme/stylish-portfolio/">Download Now!</a>
-            </div>
-        </section>
-        <!-- Portfolio-->
-        <section class="content-section" id="portfolio">
-            <div class="container px-4 px-lg-5">
-                <div class="content-section-heading text-center">
-                    <h3 class="text-secondary mb-0">Portfolio</h3>
-                    <h2 class="mb-5">Recent Projects</h2>
-                </div>
-                <div class="row gx-0">
-                    <div class="col-lg-6">
-                        <a class="portfolio-item" href="#!">
-                            <div class="caption">
-                                <div class="caption-content">
-                                    <div class="h2">Stationary</div>
-                                    <p class="mb-0">A yellow pencil with envelopes on a clean, blue backdrop!</p>
-                                </div>
-                            </div>
-                            <img class="img-fluid" src="assets/img/portfolio-1.jpg" alt="..." />
+                        <a href="javascript:void(0);" onclick="toggleDropdown('facolta-chimica-dropdown');" class="service-icon rounded-circle mx-auto mb-3">
+                            <i class="icon-pencil"></i>
                         </a>
+                        <h4><strong>Facoltà di Chimica</strong></h4>
+                        <p class="text-faded mb-0">Corsi di laurea in Chimica generale, organica e industriale.</p>
+                        <!-- Menu a tendina -->
+                        <ul id="facolta-chimica-dropdown" class="dropdown-content" style="display:none;">
+                            <li><a href="https://wa.me/+393285733478?text=Vorrei+informazioni+sul+Corso+di+Laurea+in+Chimica+Generale" target="_blank">Corso di Laurea in Chimica Generale</a></li>
+                            <li><a href="https://wa.me/+393285733478?text=Vorrei+informazioni+sul+Corso+di+Laurea+in+Chimica+Organica" target="_blank">Corso di Laurea in Chimica Organica</a></li>
+                            <li><a href="https://wa.me/+393285733478?text=Vorrei+informazioni+sul+Corso+di+Laurea+in+Chimica+Industriale" target="_blank">Corso di Laurea in Chimica Industriale</a></li>
+                        </ul>
                     </div>
-                    <div class="col-lg-6">
-                        <a class="portfolio-item" href="#!">
-                            <div class="caption">
-                                <div class="caption-content">
-                                    <div class="h2">Ice Cream</div>
-                                    <p class="mb-0">A dark blue background with a colored pencil, a clip, and a tiny ice cream cone!</p>
-                                </div>
-                            </div>
-                            <img class="img-fluid" src="assets/img/portfolio-2.jpg" alt="..." />
+
+                    <!-- Facoltà 3 -->
+                    <div class="col-lg-3 col-md-6 mb-5 mb-lg-0">
+                        <a href="javascript:void(0);" onclick="toggleDropdown('facolta-geologia-dropdown');" class="service-icon rounded-circle mx-auto mb-3">
+                            <i class="icon-globe"></i>
                         </a>
+                        <h4><strong>Facoltà di Geologia</strong></h4>
+                        <p class="text-faded mb-0">Corsi di laurea in Geologia e Scienze ambientali.</p>
+                        <!-- Menu a tendina -->
+                        <ul id="facolta-geologia-dropdown" class="dropdown-content" style="display:none;">
+                            <li><a href="https://wa.me/+393285733478?text=Vorrei+informazioni+sul+Corso+di+Laurea+in+Geologia" target="_blank">Corso di Laurea in Geologia</a></li>
+                            <li><a href="https://wa.me/+393285733478?text=Vorrei+informazioni+sul+Corso+di+Laurea+in+Scienze+Ambientali" target="_blank">Corso di Laurea in Scienze Ambientali</a></li>
+                        </ul>
                     </div>
-                    <div class="col-lg-6">
-                        <a class="portfolio-item" href="#!">
-                            <div class="caption">
-                                <div class="caption-content">
-                                    <div class="h2">Strawberries</div>
-                                    <p class="mb-0">Strawberries are such a tasty snack, especially with a little sugar on top!</p>
-                                </div>
-                            </div>
-                            <img class="img-fluid" src="assets/img/portfolio-3.jpg" alt="..." />
+
+                    <!-- Facoltà 4 -->
+                    <div class="col-lg-3 col-md-6 mb-5 mb-lg-0">
+                        <a href="javascript:void(0);" onclick="toggleDropdown('facolta-medicina-dropdown');" class="service-icon rounded-circle mx-auto mb-3">
+                            <i class="icon-heart"></i>
                         </a>
+                        <h4><strong>Facoltà di Medicina</strong></h4>
+                        <p class="text-faded mb-0">Corsi di laurea in Medicina e Chirurgia.</p>
+                        <!-- Menu a tendina -->
+                        <ul id="facolta-medicina-dropdown" class="dropdown-content" style="display:none;">
+                            <li><a href="https://wa.me/+393285733478?text=Vorrei+informazioni+sul+Corso+di+Laurea+in+Medicina" target="_blank">Corso di Laurea in Medicina</a></li>
+                            <li><a href="https://wa.me/+393285733478?text=Vorrei+informazioni+sul+Corso+di+Laurea+in+Chirurgia" target="_blank">Corso di Laurea in Chirurgia</a></li>
+                        </ul>
                     </div>
-                    <div class="col-lg-6">
-                        <a class="portfolio-item" href="#!">
-                            <div class="caption">
-                                <div class="caption-content">
-                                    <div class="h2">Workspace</div>
-                                    <p class="mb-0">A yellow workspace with some scissors, pencils, and other objects.</p>
-                                </div>
-                            </div>
-                            <img class="img-fluid" src="assets/img/portfolio-4.jpg" alt="..." />
+
+                    <!-- Facoltà 5 -->
+                    <div class="col-lg-3 col-md-6 mb-5 mb-lg-0">
+                        <a href="javascript:void(0);" onclick="toggleDropdown('facolta-giurisprudenza-dropdown');" class="service-icon rounded-circle mx-auto mb-3">
+                            <i class="icon-graduation"></i>
                         </a>
+                        <h4><strong>Facoltà di Giurisprudenza</strong></h4>
+                        <p class="text-faded mb-0">Corsi di laurea in Diritto civile, penale e internazionale.</p>
+                        <!-- Menu a tendina -->
+                        <ul id="facolta-giurisprudenza-dropdown" class="dropdown-content" style="display:none;">
+                            <li><a href="https://wa.me/+393285733478?text=Vorrei+informazioni+sul+Corso+di+Laurea+in+Giurisprudenza" target="_blank">Corso di Laurea in Giurisprudenza</a></li>
+                        </ul>
+                    </div>
+
+                    <!-- Facoltà 6 -->
+                    <div class="col-lg-3 col-md-6 mb-5 mb-lg-0">
+                        <a href="javascript:void(0);" onclick="toggleDropdown('facolta-economia-dropdown');" class="service-icon rounded-circle mx-auto mb-3">
+                            <i class="icon-people"></i>
+                        </a>
+                        <h4><strong>Facoltà di Economia</strong></h4>
+                        <p class="text-faded mb-0">Corsi di laurea in Economia e commercio, finanza e marketing.</p>
+                        <!-- Menu a tendina -->
+                        <ul id="facolta-economia-dropdown" class="dropdown-content" style="display:none;">
+                            <li><a href="https://wa.me/+393285733478?text=Vorrei+informazioni+sul+Corso+di+Laurea+in+Economia" target="_blank">Corso di Laurea in Economia</a></li>
+                            <li><a href="https://wa.me/+393285733478?text=Vorrei+informazioni+sul+Corso+di+Laurea+in+Finanza" target="_blank">Corso di Laurea in Finanza</a></li>
+                            <li><a href="https://wa.me/+393285733478?text=Vorrei+informazioni+sul+Corso+di+Laurea+in+Marketing" target="_blank">Corso di Laurea in Marketing</a></li>
+                        </ul>
+                    </div>
+
+                    <!-- Facoltà 7 -->
+                    <div class="col-lg-3 col-md-6 mb-5 mb-lg-0">
+                        <a href="javascript:void(0);" onclick="toggleDropdown('facolta-filosofia-dropdown');" class="service-icon rounded-circle mx-auto mb-3">
+                            <i class="icon-mustache"></i>
+                        </a>
+                        <h4><strong>Facoltà di Filosofia</strong></h4>
+                        <p class="text-faded mb-0">Corsi di laurea in Filosofia antica, moderna e contemporanea.</p>
+                        <!-- Menu a tendina -->
+                        <ul id="facolta-filosofia-dropdown" class="dropdown-content" style="display:none;">
+                            <li><a href="https://wa.me/+393285733478?text=Vorrei+informazioni+sul+Corso+di+Laurea+in+Filosofia" target="_blank">Corso di Laurea in Filosofia</a></li>
+                        </ul>
+                    </div>
+
+                    <!-- Facoltà 8 -->
+                    <div class="col-lg-3 col-md-6 mb-5 mb-lg-0">
+                        <a href="javascript:void(0);" onclick="toggleDropdown('facolta-lettere-dropdown');" class="service-icon rounded-circle mx-auto mb-3">
+                            <i class="icon-music-tone-alt"></i>
+                        </a>
+                        <h4><strong>Facoltà di Lettere</strong></h4>
+                        <p class="text-faded mb-0">Corsi di laurea in Letteratura italiana, storia e critica letteraria.</p>
+                        <!-- Menu a tendina -->
+                        <ul id="facolta-lettere-dropdown" class="dropdown-content" style="display:none;">
+                            <li><a href="https://wa.me/+393285733478?text=Vorrei+informazioni+sul+Corso+di+Laurea+in+Letteratura" target="_blank">Corso di Laurea in Letteratura</a></li>
+                        </ul>
+                    </div>
+
+                    <!-- Facoltà 9 -->
+                    <div class="col-lg-3 col-md-6 mb-5 mb-lg-0">
+                        <a href="javascript:void(0);" onclick="toggleDropdown('facolta-psicologia-dropdown');" class="service-icon rounded-circle mx-auto mb-3">
+                            <i class="icon-puzzle"></i>
+                        </a>
+                        <h4><strong>Facoltà di Psicologia</strong></h4>
+                        <p class="text-faded mb-0">Corsi di laurea in Psicologia clinica e neuropsicologia.</p>
+                        <!-- Menu a tendina -->
+                        <ul id="facolta-psicologia-dropdown" class="dropdown-content" style="display:none;">
+                            <li><a href="https://wa.me/+393285733478?text=Vorrei+informazioni+sul+Corso+di+Laurea+in+Psicologia" target="_blank">Corso di Laurea in Psicologia</a></li>
+                        </ul>
+                    </div>
+
+                    <!-- Facoltà 10 -->
+                    <div class="col-lg-3 col-md-6 mb-5 mb-lg-0">
+                        <a href="javascript:void(0);" onclick="toggleDropdown('facolta-biologia-dropdown');" class="service-icon rounded-circle mx-auto mb-3">
+                            <i class="icon-chemistry"></i>
+                        </a>
+                        <h4><strong>Facoltà di Biologia</strong></h4>
+                        <p class="text-faded mb-0">Corsi di laurea in Biologia molecolare e genetica.</p>
+                        <!-- Menu a tendina -->
+                        <ul id="facolta-biologia-dropdown" class="dropdown-content" style="display:none;">
+                            <li><a href="https://wa.me/+393285733478?text=Vorrei+informazioni+sul+Corso+di+Laurea+in+Biologia" target="_blank">Corso di Laurea in Biologia</a></li>
+                        </ul>
+                    </div>
+
+                    <!-- Facoltà 11 -->
+                    <div class="col-lg-3 col-md-6 mb-5 mb-lg-0">
+                        <a href="javascript:void(0);" onclick="toggleDropdown('facolta-scienze-politiche-dropdown');" class="service-icon rounded-circle mx-auto mb-3">
+                            <i class="icon-globe"></i>
+                        </a>
+                        <h4><strong>Facoltà di Scienze Politiche</strong></h4>
+                        <p class="text-faded mb-0">Corsi di laurea in Relazioni internazionali e scienze della politica.</p>
+                        <!-- Menu a tendina -->
+                        <ul id="facolta-scienze-politiche-dropdown" class="dropdown-content" style="display:none;">
+                            <li><a href="https://wa.me/+393285733478?text=Vorrei+informazioni+sul+Corso+di+Laurea+in+Scienze+Politiche" target="_blank">Corso di Laurea in Scienze Politiche</a></li>
+                        </ul>
+                    </div>
+
+                    <!-- Facoltà 12 -->
+                    <div class="col-lg-3 col-md-6 mb-5 mb-lg-0">
+                        <a href="javascript:void(0);" onclick="toggleDropdown('facolta-architettura-dropdown');" class="service-icon rounded-circle mx-auto mb-3">
+                            <i class="icon-earphones-alt"></i>
+                        </a>
+                        <h4><strong>Facoltà di Architettura</strong></h4>
+                        <p class="text-faded mb-0">Corsi di laurea in Architettura e urbanistica.</p>
+                        <!-- Menu a tendina -->
+                        <ul id="facolta-architettura-dropdown" class="dropdown-content" style="display:none;">
+                            <li><a href="https://wa.me/+393285733478?text=Vorrei+informazioni+sul+Corso+di+Laurea+in+Architettura" target="_blank">Corso di Laurea in Architettura</a></li>
+                        </ul>
                     </div>
                 </div>
             </div>
@@ -173,17 +242,27 @@
         <footer class="footer text-center">
             <div class="container px-4 px-lg-5">
                 <ul class="list-inline mb-5">
-                    <li class="list-inline-item">
-                        <a class="social-link rounded-circle text-white mr-3" href="#!"><i class="icon-social-facebook"></i></a>
-                    </li>
-                    <li class="list-inline-item">
-                        <a class="social-link rounded-circle text-white mr-3" href="#!"><i class="icon-social-twitter"></i></a>
-                    </li>
-                    <li class="list-inline-item">
-                        <a class="social-link rounded-circle text-white" href="#!"><i class="icon-social-github"></i></a>
+                    <ul class="list-inline mb-5">
+                        <li class="list-inline-item">
+                            <a class="social-link rounded-circle text-white mr-3" href="https://www.facebook.com/tuoprofilo" target="_blank"><i class="icon-social-facebook"></i></a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a class="social-link rounded-circle text-white mr-3" href="https://twitter.com/tuoprofilo" target="_blank"><i class="icon-social-twitter"></i></a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a class="social-link rounded-circle text-white mr-3" href="https://github.com/tuoprofilo" target="_blank"><i class="icon-social-github"></i></a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a class="social-link rounded-circle text-white mr-3" href="https://www.instagram.com/trend_maps_365/" target="_blank"><i class="icon-social-instagram"></i></a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a class="social-link rounded-circle text-white" href="https://www.linkedin.com/in/christian-laino-9b357522b/" target="_blank"><i class="icon-social-linkedin"></i></a>
+                        </li>
+                    </ul>
+                    
                     </li>
                 </ul>
-                <p class="text-muted small mb-0">Copyright &copy; Your Website 2023</p>
+                <p class="text-muted small mb-0">Copyright &copy; Unilessons 2024</p>
             </div>
         </footer>
         <!-- Scroll to Top Button-->
