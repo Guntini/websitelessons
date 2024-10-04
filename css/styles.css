@@ -11122,10 +11122,11 @@ footer.footer .social-link:hover {
 
 .dropdown-content {
   position: absolute;
-  background-color: white;
+  background-color: black;
   min-width: 160px;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   z-index: 1;
+  border-radius: 10px; /* Arrotonda gli angoli */
 }
 
 .dropdown-content li {
@@ -11133,10 +11134,12 @@ footer.footer .social-link:hover {
 }
 
 .dropdown-content li a {
-  color: black;
+  color: white;
   text-decoration: none;
 }
 
 .dropdown-content li a:hover {
-  background-color: #f1f1f1;
+  background-color: blue;
+  color: black; /* Cambia il colore del testo quando viene selezionato */
+  border-radius: 3px; /* Arrotonda anche gli angoli del singolo link */
 }
