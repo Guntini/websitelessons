@@ -11143,3 +11143,40 @@ footer.footer .social-link:hover {
   color: black; /* Cambia il colore del testo quando viene selezionato */
   border-radius: 3px; /* Arrotonda anche gli angoli del singolo link */
 }
+
+
+.verde-hover:hover {
+  background-color: green; /* Colore di sfondo verde */
+  color: black; /* Colore del testo */
+  border-radius: 3px;
+}
+
+
+
+.scroll-to-navbar {
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+  display: none; /* Nascondi il pulsante fino a quando non si scrolla */
+  background-color: #007bff;
+  color: white;
+  padding: 10px;
+  border-radius: 50%;
+  text-align: center;
+  cursor: pointer;
+  z-index: 1000;
+}
+
+.scroll-to-navbar:hover {
+  background-color: #0056b3;
+  color: #fff;
+}
+
+.scroll-to-navbar i {
+  font-size: 20px;
+}
+
+
+.rounded-circle {
+  border-radius: 50%;
+}
