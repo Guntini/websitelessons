@@ -5,6 +5,8 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
         <meta name="description" content="" />
         <meta name="author" content="" />
+         <!-- Bootstrap CSS -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
         <title>Unilessons</title>
         <!-- Favicon-->
         <link rel="icon" type="image/x-icon" href="assets/laurel.ico" />
@@ -57,15 +59,74 @@
         <!-- Services-->
         <section id="services" class="content-section bg-primary text-white text-center">
             <div class="container px-4 px-lg-5">
-                <h2 class="mb-5">Corsi Offerti</h2>
+                <h2 class="mb-5">
+                <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+                    <div class="container-fluid">
+                      <a class="navbar-brand" href="#">Corsi offerti</a>
+                      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDarkDropdown" aria-controls="navbarNavDarkDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                      </button>
+                      <div class="collapse navbar-collapse" id="navbarNavDarkDropdown">
+                        <ul class="navbar-nav">
+                          <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                              Scegli un corso
+                            </a>
+                            <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
+                              <li><a class="dropdown-item" href="javascript:void(0);" onclick="toggleDropdown('facolta-chimica-dropdown');">Chimica</a></li>
+                              <li><a class="dropdown-item" href="javascript:void(0);" onclick="toggleDropdown('facolta-economia-aziendale-dropdown');">Economia Aziendale</a></li>
+                              <li><a class="dropdown-item" href="javascript:void(0);" onclick="toggleDropdown('facolta-economia-e-commercio-dropdown');">Economia e Commercio</a></li>
+
+
+                              <li><a class="dropdown-item" href="javascript:void(0);" onclick="toggleDropdown('facolta-economia-e-management-dropdown');">Economia e Management</a></li>
+                              <li><a class="dropdown-item" href="javascript:void(0);" onclick="toggleDropdown('facolta-farmaceutica-e-nutraceutica-animale-dropdown');">Farmaceutica e Nutraceutica Animale</a></li>
+                              <li><a class="dropdown-item" href="javascript:void(0);" onclick="toggleDropdown('facolta-fisica-dropdown');">Fisica</a></li>
+                              <li><a class="dropdown-item" href="javascript:void(0);" onclick="toggleDropdown('facolta-gestione-e-valorizzazione-risorse-agrarie-dropdown');">Gestione e Valorizzazione delle Risorse Agrarie e delle Aree Protette</a></li>
+                              <li><a class="dropdown-item" href="javascript:void(0);" onclick="toggleDropdown('facolta-infermieristica-dropdown');">Infermieristica</a></li>
+                              <li><a class="dropdown-item" href="javascript:void(0);" onclick="toggleDropdown('facolta-informatica-dropdown');">Informatica</a></li>
+                              <li><a class="dropdown-item" href="javascript:void(0);" onclick="toggleDropdown('facolta-ingegneria-chimica-dropdown');">Ingegneria Chimica</a></li>
+                              <li><a class="dropdown-item" href="javascript:void(0);" onclick="toggleDropdown('facolta-ingegneria-civile-dropdown');">Ingegneria Civile</a></li>
+                              <li><a class="dropdown-item" href="javascript:void(0);" onclick="toggleDropdown('facolta-ingegneria-civile-ambiente-territorio-dropdown');">Ingegneria Civile per l'Ambiente ed il Territorio</a></li>
+                              <li><a class="dropdown-item" href="javascript:void(0);" onclick="toggleDropdown('facolta-ingegneria-informazione-medicina-digitale-dropdown');">Ingegneria dell'Informazione per la Medicina Digitale</a></li>
+                              <li><a class="dropdown-item" href="javascript:void(0)" onclick="toggleDropdown('facolta-ingegneria-elettronica-dropdown');">Ingegneria Elettronica</a></li>
+                              <li><a class="dropdown-item" href="javascript:void(0);" onclick="toggleDropdown('facolta-ingegneria-gestionale-dropdown');">Ingegneria Gestionale</a></li>
+                              <li><a class="dropdown-item" href="javascript:void(0);" onclick="toggleDropdown('facolta-ingegneria-informatica-dropdown');">ingegneria Informatica</a></li>
+                              <li><a class="dropdown-item" href="javascript:void(0);" onclick="toggleDropdown('facolta-ingegneria-meccanica-dropdown');">Ingegneria Meccanica</a></li>
+                              <li><a class="dropdown-item" href="javascript:void(0);" onclick="toggleDropdown('facolta-matematica-dropdown');">Matematica</a></li>
+                              <li><a class="dropdown-item" href="javascript:void(0);" onclick="toggleDropdown('facolta-ostetricia-dropdown');">Ostetricia</a></li>
+                              <li><a class="dropdown-item" href="javascript:void(0);" onclick="toggleDropdown('facolta-scienze-ambientali-dropdown');">Scienze Ambientali</a></li>
+                              <li><a class="dropdown-item" href="javascript:void(0);" onclick="toggleDropdown('facolta-scienze-biologiche-dropdown');">Scienze Biologiche</a></li>
+                              <li><a class="dropdown-item" href="javascript:void(0);" onclick="toggleDropdown('facolta-scienze-turismo-dropdown');">Scienze del Turismo</a></li>
+                              <li><a class="dropdown-item" href="javascript:void(0);" onclick="toggleDropdown('facolta-scienze-amministrazione-dropdown');">Scienze dell'Amministrazione e dell'Organizzazione</a></li>
+                              <li><a class="dropdown-item" href="javascript:void(0);" onclick="toggleDropdown('facolta-scienze-attivita-motorie-dropdown');">Scienze delle Attività Motorie, Sportive e dell'Educazione Psicomotoria</a></li>
+                              <li><a class="dropdown-item" href="javascript:void(0);" onclick="toggleDropdown('facolta-nanotecnologie-sostenibilita-dropdown');">Scienze e Nanotecnologie per la Sostenibilità</a></li>
+                              <li><a class="dropdown-item" href="javascript:void(0);" onclick="toggleDropdown('facolta-scienze-politiche-dropdown');">Scienze Politiche e delle Relazioni Internazionali</a></li>
+                              <li><a class="dropdown-item" href="javascript:void(0);" onclick="toggleDropdown('facolta-sociologia-dropdown');">Sociologia</a></li>
+                              <li><a class="dropdown-item" href="javascript:void(0);" onclick="toggleDropdown('facolta-statistica-bigdata-dropdown');">Statistica per i Big Data</a></li>
+                              <li><a class="dropdown-item" href="javascript:void(0);" onclick="toggleDropdown('facolta-studi-diplomatici-dropdown');">Studi Diplomatici, Internazionali e sulla Sicurezza Globale</a></li>
+                              <li><a class="dropdown-item" href="javascript:void(0);" onclick="toggleDropdown('facolta-tecniche-radiologia-dropdown');">Tecniche di Radiologia Medica, per Immagini e Radioterapia</a></li>
+                              <li><a class="dropdown-item" href="javascript:void(0);" onclick="toggleDropdown('facolta-tecniche-erboristiche-dropdown');">Tecniche Erboristiche</a></li>
+                              <li><a class="dropdown-item" href="javascript:void(0);" onclick="toggleDropdown('facolta-facolta-tecniche-edilizia-dropdown');">Tecniche per l'Edilizia e il Territorio</a></li>
+                              <li><a class="dropdown-item" href="javascript:void(0);" onclick="toggleDropdown('facolta-chimica-tecnologia-dropdown');">Chimica e Tecnologia Farmaceutiche</a></li>
+                              <li><a class="dropdown-item" href="javascript:void(0);" onclick="toggleDropdown('facolta-farmacia-dropdown');">Farmacia</a></li>
+                              <li><a class="dropdown-item" href="javascript:void(0);" onclick="toggleDropdown('facolta-ingegneria-edile-dropdown');">Ingegneria Edile-Architettura</a></li>
+                              <li><a class="dropdown-item" href="javascript:void(0);" onclick="toggleDropdown('facolta-scienze-formazione-dropdown');">Scienze della Formazione Primaria</a></li>
+                              <li><a class="dropdown-item" href="javascript:void(0);" onclick="toggleDropdown('facolta-medicina-dropdown');">Medicina e Chirurgia</a></li>
+
+                            </ul>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </nav>
+                </h2>
                 <div class="row gx-4 gx-lg-5">
                     <!-- Chimica -->
-                    <div class="col-lg-3 col-md-6 mb-5 mb-lg-0">
+                    <div class="col-lg-3 col-md-6 mb-5 mb-lg-0" id="#chimica">
                         <a href="javascript:void(0);" onclick="toggleDropdown('facolta-chimica-dropdown');" class="service-icon rounded-circle mx-auto mb-3">
                             <i class="icon-screen-smartphone"></i>
                         </a>
                         <h4><strong>Chimica</strong></h4>
-                        <p class="text-faded mb-0">Corsi di laurea in Chimica.</p>
                         <ul id="facolta-chimica-dropdown" class="dropdown-content" style="display:none;">
                             <li><a href="https://wa.me/+393285733478?text=Ciao,+frequento+la+Facolt%C3%A0+di+Chimica+e+vorrei+fare+ripetizioni+di+Istituzioni+di+Matematica.+Puoi+aiutarmi+?" target="_blank">Istituzioni di Matematica</a></li>
                             <li><a href="https://wa.me/+393285733478?text=Ciao,+frequento+la+Facolt%C3%A0+di+Chimica+e+vorrei+fare+ripetizioni+di+Metodi+Matematici+per+la+Chimica.+Puoi+aiutarmi+?" target="_blank">Metodi Matematici per la Chimica</a></li>
@@ -80,7 +141,6 @@
                             <i class="icon-screen-smartphone"></i>
                         </a>
                         <h4><strong>Economia Aziendale</strong></h4>
-                        <p class="text-faded mb-0">Corsi di laurea in Economia Aziendale.</p>
                         <ul id="facolta-economia-aziendale-dropdown" class="dropdown-content" style="display:none;">
                             <li><a href="https://wa.me/+393285733478?text=Ciao,+frequento+la+Facolt%C3%A0+di+Economia+Aziendale+e+vorrei+fare+ripetizioni+di+Matematica+per+l'Economia.+Puoi+aiutarmi+?" target="_blank">Matematica per l'Economia</a></li>
                             <li><a href="https://wa.me/+393285733478?text=Ciao,+frequento+la+Facolt%C3%A0+di+Economia+Aziendale+e+vorrei+fare+ripetizioni+di+Statistica.+Puoi+aiutarmi+?" target="_blank">Statistica</a></li>
@@ -93,11 +153,10 @@
                             <i class="icon-screen-smartphone"></i>
                         </a>
                         <h4><strong>Economia e Commercio</strong></h4>
-                        <p class="text-faded mb-0">Corsi di laurea in Economia e Commercio.</p>
                         <ul id="facolta-economia-e-commercio-dropdown" class="dropdown-content" style="display:none;">
-                            <li><a href="https://wa.me/+393285733478?text=Ciao,+frequento+la+Facolt%C3%A0+di+Economia+Aziendale+e+vorrei+fare+ripetizioni+di+Matematica+per+l'Economia.+Puoi+aiutarmi+?" target="_blank">Matematica per l'Economia</a></li>
-                            <li><a href="https://wa.me/+393285733478?text=Ciao,+frequento+la+Facolt%C3%A0+di+Economia+Aziendale+e+vorrei+fare+ripetizioni+di+Statistica.+Puoi+aiutarmi+?" target="_blank">Statistica</a></li>
-                            <li><a href="https://wa.me/+393285733478?text=Ciao,+frequento+la+Facolt%C3%A0+di+Economia+Aziendale+e+vorrei+fare+ripetizioni+di+Metodi+Statistici+per+l'Economia.+Puoi+aiutarmi+?" target="_blank">Metodi Statistici per l'Economia</a></li>
+                            <li><a href="https://wa.me/+393285733478?text=Ciao,+frequento+la+Facolt%C3%A0+di+Economia+e+Commercio+e+vorrei+fare+ripetizioni+di+Matematica+per+l'Economia.+Puoi+aiutarmi+?" target="_blank">Matematica per l'Economia</a></li>
+                            <li><a href="https://wa.me/+393285733478?text=Ciao,+frequento+la+Facolt%C3%A0+di+Economia+e+Commercio+e+vorrei+fare+ripetizioni+di+Statistica.+Puoi+aiutarmi+?" target="_blank">Statistica</a></li>
+                            <li><a href="https://wa.me/+393285733478?text=Ciao,+frequento+la+Facolt%C3%A0+di+Economia+e+Commercio+e+vorrei+fare+ripetizioni+di+Metodi+Quantitativi.+Puoi+aiutarmi+?" target="_blank">Metodi Quantitativi</a></li>
                         </ul>
                     </div>
 
@@ -107,10 +166,16 @@
                             <i class="icon-screen-smartphone"></i>
                         </a>
                         <h4><strong>Economia e Management</strong></h4>
-                        <p class="text-faded mb-0">Corsi di laurea in Economia e Management.</p>
                         <ul id="facolta-economia-e-management-dropdown" class="dropdown-content" style="display:none;">
-                            <li><a href="https://wa.me/+393285733478?text=Ciao,+frequento+la+Facolt%C3%A0+di+Economia+Aziendale+e+vorrei+fare+ripetizioni+di+Matematica.+Puoi+aiutarmi+?" target="_blank">Matematica</a></li>
-                            <li><a href="https://wa.me/+393285733478?text=Ciao,+frequento+la+Facolt%C3%A0+di+Economia+Aziendale+e+vorrei+fare+ripetizioni+di+Statistica.+Puoi+aiutarmi+?" target="_blank">Statistica</a></li>
+                            <li><a href="https://wa.me/+393285733478?text=Ciao,+frequento+la+Facolt%C3%A0+di+Economia+e+Management+e+vorrei+fare+ripetizioni+di+Matematica.+Puoi+aiutarmi+?" target="_blank">Matematica</a></li>
+                            <li><a href="https://wa.me/+393285733478?text=Ciao,+frequento+la+Facolt%C3%A0+di+Economia+e+Management+e+vorrei+fare+ripetizioni+di+Statistica.+Puoi+aiutarmi+?" target="_blank">Statistica</a></li>
+                            <li><a href="https://wa.me/+393285733478?text=Ciao,+frequento+la+Facolt%C3%A0+di+Economia+e+Management+e+vorrei+fare+ripetizioni+di+Matematica+e+Statistica.+Puoi+aiutarmi+?" target="_blank">Matematica e Statistica</a></li>
+                            <li><a href="https://wa.me/+393285733478?text=Ciao,+frequento+la+Facolt%C3%A0+di+Economia+e+Management+e+vorrei+fare+ripetizioni+di+Inferenza+Statistica.+Puoi+aiutarmi+?" target="_blank">Inferenza Statistica</a></li>
+                            <li class="verde-hover"><a href="https://wa.me/+393285733478?text=Ciao,+frequento+la+Facolt%C3%A0+di+Economia+e+Management+e+vorrei+fare+ripetizioni+di+Informatica.+Puoi+aiutarmi+?" target="_blank">Informatica</a></li>
+                            <li class="verde-hover"><a href="https://wa.me/+393285733478?text=Ciao,+frequento+la+Facolt%C3%A0+di+Economia+e+Management+e+vorrei+fare+ripetizioni+di+Algoritmi+e+strutture+dati.+Puoi+aiutarmi+?" target="_blank">Algoritmi e strutture dati</a></li>
+                            <li class="verde-hover"><a href="https://wa.me/+393285733478?text=Ciao,+frequento+la+Facolt%C3%A0+di+Economia+e+Management+e+vorrei+fare+ripetizioni+di+Programmazione+dei+computer.+Puoi+aiutarmi+?" target="_blank">Programmazione dei computer</a></li>
+                            <li class="verde-hover"><a href="https://wa.me/+393285733478?text=Ciao,+frequento+la+Facolt%C3%A0+di+Economia+e+Management+e+vorrei+fare+ripetizioni+di+Basi+di+dati.+Puoi+aiutarmi+?" target="_blank">Basi di dati</a></li>
+                            <li class="verde-hover"><a href="https://wa.me/+393285733478?text=Ciao,+frequento+la+Facolt%C3%A0+di+Economia+e+Management+e+vorrei+fare+ripetizioni+di+Progettazione+del+software.+Puoi+aiutarmi+?" target="_blank">Progettazione del software</a></li>
                         </ul>
                     </div>
 
@@ -120,20 +185,21 @@
                             <i class="icon-screen-smartphone"></i>
                         </a>
                         <h4><strong>Farmaceutica e Nutraceutica Animale</strong></h4>
-                        <p class="text-faded mb-0">Corsi di laurea in Farmaceutica e Nutraceutica Animale.</p>
                         <ul id="facolta-farmaceutica-e-nutraceutica-animale-dropdown" class="dropdown-content" style="display:none;">
                             <li><a href="https://wa.me/+393285733478?text=Ciao,+frequento+la+Facolt%C3%A0+di+Farmaceutica+e+Nutraceutica+Animale+e+vorrei+fare+ripetizioni+di+Fisica+con+elementi+di+Matematica+e+Statistica.+Puoi+aiutarmi+?" target="_blank">Fisica con elementi di Matematica e Statistica</a></li>
+                            <li class="verde-hover"><a href="https://wa.me/+393285733478?text=Ciao,+frequento+la+Facolt%C3%A0+di+Farmaceutica+e+Nutraceutica+Animale+e+vorrei+fare+ripetizioni+di+Abilità+Informatiche+e+telematiche.+Puoi+aiutarmi+?" target="_blank">Abilità Informatiche e telematiche</a></li>
                         </ul>
                     </div>
                     <!-- Fisica -->
-                    <div class="col-lg-3 col-md-6 mb-5 mb-lg-0">
+                    <div class="col-lg-3 col-md-6 mb-5 mb-lg-0" id="#fisica">
                         <a href="javascript:void(0);" onclick="toggleDropdown('facolta-fisica-dropdown');" class="service-icon rounded-circle mx-auto mb-3">
                             <i class="icon-screen-smartphone"></i>
                         </a>
                         <h4><strong>Fisica</strong></h4>
-                        <p class="text-faded mb-0">Corsi di laurea in Fisica.</p>
                         <ul id="facolta-fisica-dropdown" class="dropdown-content" style="display:none;">
                             <li><a href="https://wa.me/+393285733478?text=Ciao,+frequento+la+Facolt%C3%A0+di+Fisica+e+vorrei+fare+ripetizioni+di+uno+qualsiasi+tra+gli+esami+della+Triennale.+Puoi+aiutarmi+?" target="_blank">Corso di Laurea in Fisica</a></li>
+                            <li class="verde-hover"><a href="https://wa.me/+393285733478?text=Ciao,+frequento+la+Facolt%C3%A0+di+Fisica+e+vorrei+fare+ripetizioni+di+Laboratorio+di+Informatica.+Puoi+aiutarmi+?" target="_blank">Laboratorio di Informatica</a></li>
+
                         </ul>
                     </div>
 
@@ -143,9 +209,9 @@
                             <i class="icon-screen-smartphone"></i>
                         </a>
                         <h4><strong>Gestione e Valorizzazione delle Risorse Agrarie e delle Aree Protette</strong></h4>
-                        <p class="text-faded mb-0">Corsi di laurea in Gestione e Valorizzazione delle Risorse Agrarie e delle Aree Protette.</p>
                         <ul id="facolta-gestione-e-valorizzazione-risorse-agrarie-dropdown" class="dropdown-content" style="display:none;">
-                            <li><a href="https://wa.me/+393285733478?text=Ciao,+frequento+la+Facolt%C3%A0+di+Gestione+e+Valorizzazione+delle+Risorse+Agrarie+e+vorrei+fare+ripetizioni+di+Matematica+e+Fisica.+Puoi+aiutarmi+?" target="_blank">Matematica e Fisica</a></li>
+                            <li><a href="https://wa.me/+393285733478?text=Ciao,+frequento+la+Facolt%C3%A0+di+Gestione+e+Valorizzazione+delle+Risorse+Agrarie+e+delle+Aree+Protette+e+vorrei+fare+ripetizioni+di+Matematica+e+Fisica.+Puoi+aiutarmi+?" target="_blank">Matematica e Fisica</a></li>
+                            <li class="verde-hover"><a href="https://wa.me/+393285733478?text=Ciao,+frequento+la+Facolt%C3%A0+di+Gestione+e+Valorizzazione+delle+Risorse+Agrarie+e+delle+Aree+protette+e+vorrei+fare+ripetizioni+di+Laboratorio+di+informatica+per+l’agricoltura.+Puoi+aiutarmi+?" target="_blank">Laboratorio di informatica per l’agricoltura</a></li>
                         </ul>
                     </div>
 
@@ -155,8 +221,8 @@
                             <i class="icon-screen-smartphone"></i>
                         </a>
                         <h4><strong>Infermieristica</strong></h4>
-                        <p class="text-faded mb-0">Corsi di laurea in Infermieristica.</p>
                         <ul id="facolta-infermieristica-dropdown" class="dropdown-content" style="display:none;">
+                            <li><a href="https://wa.me/+393285733478?text=Ciao,+frequento+la+Facolt%C3%A0+di+Infermieristica+e+vorrei+fare+ripetizioni+di+Fisica,+Statistica+ed+Informatica.+Puoi+aiutarmi+?" target="_blank">Fisica, Statistica ed Informatica</a></li>
                             <li><a href="https://wa.me/+393285733478?text=Ciao,+frequento+la+Facolt%C3%A0+di+Infermieristica+e+vorrei+fare+ripetizioni+di+Fisica,+Statistica+ed+Informatica.+Puoi+aiutarmi+?" target="_blank">Fisica, Statistica ed Informatica</a></li>
                         </ul>
                     </div>
@@ -167,10 +233,10 @@
                             <i class="icon-screen-smartphone"></i>
                         </a>
                         <h4><strong>Informatica</strong></h4>
-                        <p class="text-faded mb-0">Corsi di laurea in Informatica.</p>
                         <ul id="facolta-informatica-dropdown" class="dropdown-content" style="display:none;">
                             <li><a href="https://wa.me/+393285733478?text=Ciao,+frequento+la+Facolt%C3%A0+di+Informatica+e+vorrei+fare+ripetizioni+di+Analisi+Matematica.+Puoi+aiutarmi+?" target="_blank">Analisi Matematica</a></li>
                             <li><a href="https://wa.me/+393285733478?text=Ciao,+frequento+la+Facolt%C3%A0+di+Informatica+e+vorrei+fare+ripetizioni+di+Fisica.+Puoi+aiutarmi+?" target="_blank">Fisica</a></li>
+                            <li class="verde-hover"><a href="https://wa.me/+393285733478?text=Ciao,+frequento+la+Facolt%C3%A0+di+Informatica+e+vorrei+fare+ripetizioni+di+uno+qualsiasi+tra+gli+esami+della+Triennale.+Puoi+aiutarmi+?" target="_blank">Corso di Laurea in Informatica</a></li>
                         </ul>
                     </div>
 
@@ -180,12 +246,12 @@
                             <i class="icon-screen-smartphone"></i>
                         </a>
                         <h4><strong>Ingegneria Chimica</strong></h4>
-                        <p class="text-faded mb-0">Corsi di laurea in Ingegneria Chimica.</p>
                         <ul id="facolta-ingegneria-chimica-dropdown" class="dropdown-content" style="display:none;">
                             <li><a href="https://wa.me/+393285733478?text=Ciao,+frequento+la+Facolt%C3%A0+di+Ingegneria+Chimica+e+vorrei+fare+ripetizioni+di+Matematica+1.+Puoi+aiutarmi+?" target="_blank">Matematica 1</a></li>
                             <li><a href="https://wa.me/+393285733478?text=Ciao,+frequento+la+Facolt%C3%A0+di+Ingegneria+Chimica+e+vorrei+fare+ripetizioni+di+Matematica+2.+Puoi+aiutarmi+?" target="_blank">Matematica 2</a></li>
                             <li><a href="https://wa.me/+393285733478?text=Ciao,+frequento+la+Facolt%C3%A0+di+Ingegneria+Chimica+e+vorrei+fare+ripetizioni+di+Fisica.+Puoi+aiutarmi+?" target="_blank">Fisica</a></li>
                             <li><a href="https://wa.me/+393285733478?text=Ciao,+frequento+la+Facolt%C3%A0+di+Ingegneria+Chimica+e+vorrei+fare+ripetizioni+di+Elettrotecnica.+Puoi+aiutarmi+?" target="_blank">Elettrotecnica</a></li>
+                            <li class="verde-hover"><a href="https://wa.me/+393285733478?text=Ciao,+frequento+la+Facolt%C3%A0+di+Ingegneria+Chimica+e+vorrei+fare+ripetizioni+di+Fondamenti+di+informatica.+Puoi+aiutarmi+?" target="_blank">Fondamenti di informatica</a></li>
                         </ul>
                     </div>
 
@@ -195,12 +261,13 @@
                             <i class="icon-screen-smartphone"></i>
                         </a>
                         <h4><strong>Ingegneria Civile</strong></h4>
-                        <p class="text-faded mb-0">Corsi di laurea in Ingegneria Civile.</p>
                         <ul id="facolta-ingegneria-civile-dropdown" class="dropdown-content" style="display:none;">
                             <li><a href="https://wa.me/+393285733478?text=Ciao,+frequento+la+Facolt%C3%A0+di+Ingegneria+Civile+e+vorrei+fare+ripetizioni+di+Matematica+1.+Puoi+aiutarmi+?" target="_blank">Matematica 1</a></li>
                             <li><a href="https://wa.me/+393285733478?text=Ciao,+frequento+la+Facolt%C3%A0+di+Ingegneria+Civile+e+vorrei+fare+ripetizioni+di+Matematica+2.+Puoi+aiutarmi+?" target="_blank">Matematica 2</a></li>
                             <li><a href="https://wa.me/+393285733478?text=Ciao,+frequento+la+Facolt%C3%A0+di+Ingegneria+Civile+e+vorrei+fare+ripetizioni+di+Fisica.+Puoi+aiutarmi+?" target="_blank">Fisica</a></li>
                             <li><a href="https://wa.me/+393285733478?text=Ciao,+frequento+la+Facolt%C3%A0+di+Ingegneria+Civile+e+vorrei+fare+ripetizioni+di+Elettrotecnica.+Puoi+aiutarmi+?" target="_blank">Elettrotecnica</a></li>
+                            <li><a href="https://wa.me/+393285733478?text=Ciao,+frequento+la+Facolt%C3%A0+di+Ingegneria+Civile+e+vorrei+fare+ripetizioni+di+Statistica+applicata+all'Ingegneria.+Puoi+aiutarmi+?" target="_blank">Statistica applicata all'Ingegneria</a></li>
+                            <li class="verde-hover"><a href="https://wa.me/+393285733478?text=Ciao,+frequento+la+Facolt%C3%A0+di+Ingegneria+Civile+e+vorrei+fare+ripetizioni+di+Applicazioni+Informatiche+all’Ingegneria+Civile.+Puoi+aiutarmi+?" target="_blank">Applicazioni Informatiche all’Ingegneria Civile</a></li>
                         </ul>
                     </div>
 
@@ -210,7 +277,6 @@
                             <i class="icon-screen-smartphone"></i>
                         </a>
                         <h4><strong>Ingegneria Civile per l'Ambiente ed il Territorio</strong></h4>
-                        <p class="text-faded mb-0">Corsi di laurea in Ingegneria Civile per l'Ambiente ed il Territorio.</p>
                         <ul id="facolta-ingegneria-civile-ambiente-territorio-dropdown" class="dropdown-content" style="display:none;">
                             <li><a href="https://wa.me/+393285733478?text=Ciao,+frequento+la+Facolt%C3%A0+di+Ingegneria+Civile+per+l'Ambiente+e+il+Territorio+e+vorrei+fare+ripetizioni+di+Matematica+1.+Puoi+aiutarmi+?" target="_blank">Matematica 1</a></li>
                             <li><a href="https://wa.me/+393285733478?text=Ciao,+frequento+la+Facolt%C3%A0+di+Ingegneria+Civile+per+l'Ambiente+e+il+Territorio+e+vorrei+fare+ripetizioni+di+Matematica+2.+Puoi+aiutarmi+?" target="_blank">Matematica 2</a></li>
@@ -224,12 +290,15 @@
                             <i class="icon-screen-smartphone"></i>
                         </a>
                         <h4><strong>Ingegneria dell'Informazione per la Medicina Digitale</strong></h4>
-                        <p class="text-faded mb-0">Corsi di laurea in Ingegneria dell'Informazione per la Medicina Digitale.</p>
                         <ul id="facolta-ingegneria-informazione-medicina-digitale-dropdown" class="dropdown-content" style="display:none;">
                             <li><a href="https://wa.me/+393285733478?text=Ciao,+frequento+la+Facolt%C3%A0+di+Ingegneria+dell'Informazione+per+la+Medicina+Digitale+e+vorrei+fare+ripetizioni+di+Analisi+Matematica+1.+Puoi+aiutarmi+?" target="_blank">Analisi Matematica 1</a></li>
                             <li><a href="https://wa.me/+393285733478?text=Ciao,+frequento+la+Facolt%C3%A0+di+Ingegneria+dell'Informazione+per+la+Medicina+Digitale+e+vorrei+fare+ripetizioni+di+Matematica+2+e+Algebra+Lineare.+Puoi+aiutarmi+?" target="_blank">Analisi Matematica 2 e Algebra Lineare</a></li>
                             <li><a href="https://wa.me/+393285733478?text=Ciao,+frequento+la+Facolt%C3%A0+di+Ingegneria+dell'Informazione+per+la+Medicina+Digitale+e+vorrei+fare+ripetizioni+di+Fisica+Generale.+Puoi+aiutarmi+?" target="_blank">Fisica Generale</a></li>
-                    </div>
+                            <li class="verde-hover"><a href="https://wa.me/+393285733478?text=Ciao,+frequento+la+Facolt%C3%A0+di+Ingegneria+dell'Informazione+per+la+Medicina+Digitale+e+vorrei+fare+ripetizioni+di+Fondamenti+di+Programmazione.+Puoi+aiutarmi+?" target="_blank">Fondamenti di Programmazione</a></li>
+                            <li class="verde-hover"><a href="https://wa.me/+393285733478?text=Ciao,+frequento+la+Facolt%C3%A0+di+Ingegneria+dell'Informazione+per+la+Medicina+Digitale+e+vorrei+fare+ripetizioni+di+Algoritmi+e+Strutture+Dati.+Puoi+aiutarmi+?" target="_blank">Algoritmi e Strutture Dati</a></li>
+                            <li class="verde-hover"><a href="https://wa.me/+393285733478?text=Ciao,+frequento+la+Facolt%C3%A0+di+Ingegneria+dell'Informazione+per+la+Medicina+Digitale+e+vorrei+fare+ripetizioni+di+Programmazione+ad+Oggetti.+Puoi+aiutarmi+?" target="_blank">Programmazione ad Oggetti</a></li>
+                            <li class="verde-hover"><a href="https://wa.me/+393285733478?text=Ciao,+frequento+la+Facolt%C3%A0+di+Ingegneria+dell'Informazione+per+la+Medicina+Digitale+e+vorrei+fare+ripetizioni+di+Programmazione+Java+avanzata.+Puoi+aiutarmi+?" target="_blank">Programmazione Java avanzata</a></li>
+                        </div>
 
                     <!-- Ingegneria Elettronica -->
                     <div class="col-lg-3 col-md-6 mb-5 mb-lg-0">
@@ -237,13 +306,14 @@
                             <i class="icon-screen-smartphone"></i>
                         </a>
                         <h4><strong>Ingegneria Elettronica</strong></h4>
-                        <p class="text-faded mb-0">Corsi di laurea in Ingegneria Elettronica.</p>
                         <ul id="facolta-ingegneria-elettronica-dropdown" class="dropdown-content" style="display:none;">
                             <li><a href="https://wa.me/+393285733478?text=Ciao,+frequento+la+Facolt%C3%A0+di+Ingegneria+Elettronica+e+vorrei+fare+ripetizioni+di+Matematica+1.+Puoi+aiutarmi+?" target="_blank">Matematica 1</a></li>
                             <li><a href="https://wa.me/+393285733478?text=Ciao,+frequento+la+Facolt%C3%A0+di+Ingegneria+Elettronica+e+vorrei+fare+ripetizioni+di+Matematica+2.+Puoi+aiutarmi+?" target="_blank">Matematica 2</a></li>
                             <li><a href="https://wa.me/+393285733478?text=Ciao,+frequento+la+Facolt%C3%A0+di+Ingegneria+Elettronica+e+vorrei+fare+ripetizioni+di+Fisica+1.+Puoi+aiutarmi+?" target="_blank">Fisica 1</a></li>
                             <li><a href="https://wa.me/+393285733478?text=Ciao,+frequento+la+Facolt%C3%A0+di+Ingegneria+Elettronica+e+vorrei+fare+ripetizioni+di+Fisica+2.+Puoi+aiutarmi+?" target="_blank">Fisica 2</a></li>
                             <li><a href="https://wa.me/+393285733478?text=Ciao,+frequento+la+Facolt%C3%A0+di+Ingegneria+Elettronica+e+vorrei+fare+ripetizioni+di+Elettrotecnica.+Puoi+aiutarmi+?" target="_blank">Elettrotecnica</a></li>
+                            <li class="verde-hover"><a href="https://wa.me/+393285733478?text=Ciao,+frequento+la+Facolt%C3%A0+di+Ingegneria+Elettronica+e+vorrei+fare+ripetizioni+di+Fondamenti+di+informatica.+Puoi+aiutarmi+?" target="_blank">Fondamenti di informatica</a></li>
+                            <li class="verde-hover"><a href="https://wa.me/+393285733478?text=Ciao,+frequento+la+Facolt%C3%A0+di+Ingegneria+Elettronica+e+vorrei+fare+ripetizioni+di+Calcolatori+Elettronici.+Puoi+aiutarmi+?" target="_blank">Calcolatori Elettronici</a></li>
                         </ul>
                     </div>
 
@@ -253,13 +323,14 @@
                             <i class="icon-screen-smartphone"></i>
                         </a>
                         <h4><strong>Ingegneria Gestionale</strong></h4>
-                        <p class="text-faded mb-0">Corsi di laurea in Ingegneria Gestionale.</p>
                         <ul id="facolta-ingegneria-gestionale-dropdown" class="dropdown-content" style="display:none;">
                             <li><a href="https://wa.me/+393285733478?text=Ciao,+frequento+la+Facolt%C3%A0+di+Ingegneria+Gestionale+e+vorrei+fare+ripetizioni+di+Matematica+1.+Puoi+aiutarmi+?" target="_blank">Matematica 1</a></li>
                             <li><a href="https://wa.me/+393285733478?text=Ciao,+frequento+la+Facolt%C3%A0+di+Ingegneria+Gestionale+e+vorrei+fare+ripetizioni+di+Matematica+2.+Puoi+aiutarmi+?" target="_blank">Matematica 2</a></li>
                             <li><a href="https://wa.me/+393285733478?text=Ciao,+frequento+la+Facolt%C3%A0+di+Ingegneria+Gestionale+e+vorrei+fare+ripetizioni+di+Fisica+1.+Puoi+aiutarmi+?" target="_blank">Fisica 1</a></li>
                             <li><a href="https://wa.me/+393285733478?text=Ciao,+frequento+la+Facolt%C3%A0+di+Ingegneria+Gestionale+e+vorrei+fare+ripetizioni+di+Fisica+2.+Puoi+aiutarmi+?" target="_blank">Fisica 2</a></li>
-                            <li><a href="https://wa.me/+393285733478?text=Ciao,+frequento+la+Facolt%C3%A0+di+Ingegneria+Gestionale+e+vorrei+fare+ripetizioni+di+Elettrotecnica.+Puoi+aiutarmi+?" target="_blank">Elettrotecnica</a></li>                       
+                            <li><a href="https://wa.me/+393285733478?text=Ciao,+frequento+la+Facolt%C3%A0+di+Ingegneria+Gestionale+e+vorrei+fare+ripetizioni+di+Elettrotecnica.+Puoi+aiutarmi+?" target="_blank">Elettrotecnica</a></li>     
+                            <li class="verde-hover"><a href="https://wa.me/+393285733478?text=Ciao,+frequento+la+Facolt%C3%A0+di+Ingegneria+Gestionale+e+vorrei+fare+ripetizioni+di+Fondamenti+di+Informatica+e+Basi+di+dati.+Puoi+aiutarmi+?" target="_blank">Fondamenti di Informatica e Basi di dati</a></li>
+                            <li class="verde-hover"><a href="https://wa.me/+393285733478?text=Ciao,+frequento+la+Facolt%C3%A0+di+Ingegneria+Gestionale+e+vorrei+fare+ripetizioni+di+Ricerca+Operativa.+Puoi+aiutarmi+?" target="_blank">Ricerca Operativa</a></li>
                         </ul>
                     </div>
 
@@ -269,13 +340,22 @@
                             <i class="icon-screen-smartphone"></i>
                         </a>
                         <h4><strong>Ingegneria Informatica</strong></h4>
-                        <p class="text-faded mb-0">Corsi di laurea in Ingegneria Informatica.</p>
                         <ul id="facolta-ingegneria-informatica-dropdown" class="dropdown-content" style="display:none;">
                             <li><a href="https://wa.me/+393285733478?text=Ciao,+frequento+la+Facolt%C3%A0+di+Ingegneria+Informatica+e+vorrei+fare+ripetizioni+di+Analisi+Matematica+1.+Puoi+aiutarmi+?" target="_blank">Analisi Matematica 1</a></li>
                             <li><a href="https://wa.me/+393285733478?text=Ciao,+frequento+la+Facolt%C3%A0+di+Ingegneria+Informatica+e+vorrei+fare+ripetizioni+di+Analisi+Matematica+2.+Puoi+aiutarmi+?" target="_blank">Analisi Matematica 2</a></li>
+                            <li><a href="https://wa.me/+393285733478?text=Ciao,+frequento+la+Facolt%C3%A0+di+Ingegneria+Informatica+e+vorrei+fare+ripetizioni+di+Geometria,+Algebra+e+Logica.+Puoi+aiutarmi+?" target="_blank">Geometria, Algebra e Logica</a></li>
+                            <li><a href="https://wa.me/+393285733478?text=Ciao,+frequento+la+Facolt%C3%A0+di+Ingegneria+Informatica+e+vorrei+fare+ripetizioni+di+Statistica+Applicata.+Puoi+aiutarmi+?" target="_blank">Statistica Applicata</a></li>
                             <li><a href="https://wa.me/+393285733478?text=Ciao,+frequento+la+Facolt%C3%A0+di+Ingegneria+Informatica+e+vorrei+fare+ripetizioni+di+Fisica+1.+Puoi+aiutarmi+?" target="_blank">Fisica 1</a></li>
                             <li><a href="https://wa.me/+393285733478?text=Ciao,+frequento+la+Facolt%C3%A0+di+Ingegneria+Informatica+e+vorrei+fare+ripetizioni+di+Fisica+2.+Puoi+aiutarmi+?" target="_blank">Fisica 2</a></li>
-                            <li><a href="https://wa.me/+393285733478?text=Ciao,+frequento+la+Facolt%C3%A0+di+Ingegneria+Informatica+e+vorrei+fare+ripetizioni+di+Elettrotecnica.+Puoi+aiutarmi+?" target="_blank">Elettrotecnica</a></li>                        
+                            <li><a href="https://wa.me/+393285733478?text=Ciao,+frequento+la+Facolt%C3%A0+di+Ingegneria+Informatica+e+vorrei+fare+ripetizioni+di+Elettrotecnica.+Puoi+aiutarmi+?" target="_blank">Elettrotecnica</a></li>      
+                            <li class="verde-hover"><a href="https://wa.me/+393285733478?text=Ciao,+frequento+la+Facolt%C3%A0+di+Ingegneria+Informatica+e+vorrei+fare+ripetizioni+di+Fondamenti+di+programmazione.+Puoi+aiutarmi+?" target="_blank">Fondamenti di programmazione</a></li>                  
+                            <li class="verde-hover"><a href="https://wa.me/+393285733478?text=Ciao,+frequento+la+Facolt%C3%A0+di+Ingegneria+Informatica+e+vorrei+fare+ripetizioni+di+Reti+di+Calcolatori.+Puoi+aiutarmi+?" target="_blank">Reti di Calcolatori</a></li>                  
+                            <li class="verde-hover"><a href="https://wa.me/+393285733478?text=Ciao,+frequento+la+Facolt%C3%A0+di+Ingegneria+Informatica+e+vorrei+fare+ripetizioni+di+Fondamenti+di+programmazione.+Puoi+aiutarmi+?" target="_blank">Fondamenti di programmazione</a></li>                  
+                            <li class="verde-hover"><a href="https://wa.me/+393285733478?text=Ciao,+frequento+la+Facolt%C3%A0+di+Ingegneria+Informatica+e+vorrei+fare+ripetizioni+di+Sistemi+Operativi.+Puoi+aiutarmi+?" target="_blank">Sistemi Operativi</a></li>                  
+                            <li class="verde-hover"><a href="https://wa.me/+393285733478?text=Ciao,+frequento+la+Facolt%C3%A0+di+Ingegneria+Informatica+e+vorrei+fare+ripetizioni+di+Basi+di+Dati.+Puoi+aiutarmi+?" target="_blank">Basi di Dati</a></li>                  
+                            <li class="verde-hover"><a href="https://wa.me/+393285733478?text=Ciao,+frequento+la+Facolt%C3%A0+di+Ingegneria+Informatica+e+vorrei+fare+ripetizioni+di+Fondamenti+di+Programmazione+ad+oggetti.+Puoi+aiutarmi+?" target="_blank">Programmazione ad oggetti</a></li>                  
+                            <li class="verde-hover"><a href="https://wa.me/+393285733478?text=Ciao,+frequento+la+Facolt%C3%A0+di+Ingegneria+Informatica+e+vorrei+fare+ripetizioni+di+Fondamenti+di+Ingegneria+del+software.+Puoi+aiutarmi+?" target="_blank">Ingegneria del software</a></li>                  
+                            <li class="verde-hover"><a href="https://wa.me/+393285733478?text=Ciao,+frequento+la+Facolt%C3%A0+di+Ingegneria+Informatica+e+vorrei+fare+ripetizioni+di+Fondamenti+di+Programmazione+Java+avanzata.+Puoi+aiutarmi+?" target="_blank">Programmazione Java avanzata</a></li>                  
                         </ul>
                     </div>
 
@@ -285,13 +365,14 @@
                             <i class="icon-screen-smartphone"></i>
                         </a>
                         <h4><strong>Ingegneria Meccanica</strong></h4>
-                        <p class="text-faded mb-0">Corsi di laurea in Ingegneria Meccanica.</p>
                         <ul id="facolta-ingegneria-meccanica-dropdown" class="dropdown-content" style="display:none;">
                             <li><a href="https://wa.me/+393285733478?text=Ciao,+frequento+la+Facolt%C3%A0+di+Ingegneria+Meccanica+e+vorrei+fare+ripetizioni+di+Matematica+1.+Puoi+aiutarmi+?" target="_blank">Matematica 1</a></li>
                             <li><a href="https://wa.me/+393285733478?text=Ciao,+frequento+la+Facolt%C3%A0+di+Ingegneria+Meccanica+e+vorrei+fare+ripetizioni+di+Matematica+2.+Puoi+aiutarmi+?" target="_blank">Matematica 2</a></li>
                             <li><a href="https://wa.me/+393285733478?text=Ciao,+frequento+la+Facolt%C3%A0+di+Ingegneria+Meccanica+e+vorrei+fare+ripetizioni+di+Fisica+1.+Puoi+aiutarmi+?" target="_blank">Fisica 1</a></li>
                             <li><a href="https://wa.me/+393285733478?text=Ciao,+frequento+la+Facolt%C3%A0+di+Ingegneria+Meccanica+e+vorrei+fare+ripetizioni+di+Fisica+2.+Puoi+aiutarmi+?" target="_blank">Fisica 2</a></li>
                             <li><a href="https://wa.me/+393285733478?text=Ciao,+frequento+la+Facolt%C3%A0+di+Ingegneria+Meccanica+e+vorrei+fare+ripetizioni+di+Elettrotecnica.+Puoi+aiutarmi+?" target="_blank">Elettrotecnica</a></li>
+                            <li class="verde-hover"><a href="https://wa.me/+393285733478?text=Ciao,+frequento+la+Facolt%C3%A0+di+Ingegneria+Meccanica+e+vorrei+fare+ripetizioni+di+Fondamenti+di+Informatica.+Puoi+aiutarmi+?" target="_blank">Fondamenti di Informatica</a></li>
+                            <li class="verde-hover"><a href="https://wa.me/+393285733478?text=Ciao,+frequento+la+Facolt%C3%A0+di+Ingegneria+Meccanica+e+vorrei+fare+ripetizioni+di+Ricerca+Operativa.+Puoi+aiutarmi+?" target="_blank">Ricerca Operativa</a></li>
                         </ul>
                     </div>
 
@@ -301,9 +382,11 @@
                             <i class="icon-screen-smartphone"></i>
                         </a>
                         <h4><strong>Matematica</strong></h4>
-                        <p class="text-faded mb-0">Corsi di laurea in Matematica.</p>
                         <ul id="facolta-matematica-dropdown" class="dropdown-content" style="display:none;">
-                            <li><a href="https://wa.me/+393285733478?text=Ciao,+frequento+la+Facolt%C3%A0+di+Matematica+e+vorrei+fare+ripetizioni+di+uno+qualsiasi+tra+gli+esami+della+Triennale.+Puoi+aiutarmi+?" target="_blank">Corso di Laurea in Matematica</a></li>                        </ul>
+                            <li><a href="https://wa.me/+393285733478?text=Ciao,+frequento+la+Facolt%C3%A0+di+Matematica+e+vorrei+fare+ripetizioni+di+uno+qualsiasi+tra+gli+esami+della+Triennale.+Puoi+aiutarmi+?" target="_blank">Corso di Laurea in Matematica</a></li>                        
+                            <li class="verde-hover"><a href="https://wa.me/+393285733478?text=Ciao,+frequento+la+Facolt%C3%A0+di+Matemematica+e+vorrei+fare+ripetizioni+di+Laboratorio+di+programmazione+e+Calcolo.+Puoi+aiutarmi+?" target="_blank">Laboratorio di programmazione e Calcolo</a></li>
+                            <li class="verde-hover"><a href="https://wa.me/+393285733478?text=Ciao,+frequento+la+Facolt%C3%A0+di+Matemematica+e+vorrei+fare+ripetizioni+di+Fondamenti+di+Informatica+e+Laboratorio.+Puoi+aiutarmi+?" target="_blank">Fondamenti di Informatica e Laboratorio</a></li>
+                        </ul>
                     </div>
                     <!-- Ostetricia -->
                     <div class="col-lg-3 col-md-6 mb-5 mb-lg-0">
@@ -311,7 +394,6 @@
                             <i class="icon-screen-smartphone"></i>
                         </a>
                         <h4><strong>Ostetricia</strong></h4>
-                        <p class="text-faded mb-0">Corsi di laurea in Ostetricia.</p>
                         <ul id="facolta-ostetricia-dropdown" class="dropdown-content" style="display:none;">
                             <li><a href="https://wa.me/+393285733478?text=Ciao,+frequento+la+Facolt%C3%A0+di+Ostetricia+e+vorrei+fare+ripetizioni+di+Nozioni+di+Fisica,+Biochimica+e+Biologia+Apllicata.+Puoi+aiutarmi+?" target="_blank">Nozioni di Fisica, Biochimica e Biologia Apllicata</a></li>
                         </ul>
@@ -323,7 +405,6 @@
                             <i class="icon-screen-smartphone"></i>
                         </a>
                         <h4><strong>Scienze Ambientali</strong></h4>
-                        <p class="text-faded mb-0">Corsi di laurea in Scienze Ambientali.</p>
                         <ul id="facolta-scienze-ambientali-dropdown" class="dropdown-content" style="display:none;">
                             <li><a href="https://wa.me/+393285733478?text=Ciao,+frequento+la+Facolt%C3%A0+di+Scienze+Ambientali+e+vorrei+fare+ripetizioni+di+Metodi+Matematici+per+le+Scienze+Ambientali.+Puoi+aiutarmi+?" target="_blank">Metodi Matematici per le Scienze Ambientali</a></li>
                             <li><a href="https://wa.me/+393285733478?text=Ciao,+frequento+la+Facolt%C3%A0+di+Scienze+Ambientali+e+vorrei+fare+ripetizioni+di+Fisica+1.+Puoi+aiutarmi+?" target="_blank">Fisica 1</a></li>
@@ -337,10 +418,11 @@
                             <i class="icon-screen-smartphone"></i>
                         </a>
                         <h4><strong>Scienze Biologiche</strong></h4>
-                        <p class="text-faded mb-0">Corsi di laurea in Scienze Biologiche.</p>
                         <ul id="facolta-scienze-biologiche-dropdown" class="dropdown-content" style="display:none;">
                             <li><a href="https://wa.me/+393285733478?text=Ciao,+frequento+la+Facolt%C3%A0+di+Scienze+Biologiche+e+vorrei+fare+ripetizioni+di+Matematica+e+Statistica.+Puoi+aiutarmi+?" target="_blank">Matematica e Statistica</a></li>
                             <li><a href="https://wa.me/+393285733478?text=Ciao,+frequento+la+Facolt%C3%A0+di+Scienze+Biologiche+e+vorrei+fare+ripetizioni+di+Fisica.+Puoi+aiutarmi+?" target="_blank">Fisica</a></li>
+                            <li class="verde-hover"><a href="https://wa.me/+393285733478?text=Ciao,+frequento+la+Facolt%C3%A0+di+Scienze+Biologiche+e+vorrei+fare+ripetizioni+di+Principi+di+Informatica.+Puoi+aiutarmi+?" target="_blank">Principi di informatica</a></li>
+
                         </ul>
                     </div>
 
@@ -350,9 +432,10 @@
                             <i class="icon-screen-smartphone"></i>
                         </a>
                         <h4><strong>Scienze del Turismo</strong></h4>
-                        <p class="text-faded mb-0">Corsi di laurea in Scienze del Turismo.</p>
                         <ul id="facolta-scienze-turismo-dropdown" class="dropdown-content" style="display:none;">
                             <li><a href="https://wa.me/+393285733478?text=Ciao,+frequento+la+Facolt%C3%A0+di+Scienze+del+Turismo+e+vorrei+fare+ripetizioni+di+Statistica+per+il+Turismo.+Puoi+aiutarmi+?" target="_blank">Statistica per il Turismo</a></li>
+                            <li><a href="https://wa.me/+393285733478?text=Ciao,+frequento+la+Facolt%C3%A0+di+Scienze+del+Turismo+e+vorrei+fare+ripetizioni+di+Matematica+per+le+Imprese+Turistiche.+Puoi+aiutarmi+?" target="_blank">Matematica per le Imprese Turistiche</a></li>
+                            <li class="verde-hover"><a href="https://wa.me/+393285733478?text=Ciao,+frequento+la+Facolt%C3%A0+di+Scienze+del+Turismo+e+vorrei+fare+ripetizioni+di+Information+Technology+per+i+sistemi+turistici.+Puoi+aiutarmi+?" target="_blank">Information Technology per i sistemi turistici</a></li>
                         </ul>
                     </div>
 
@@ -362,7 +445,6 @@
                             <i class="icon-screen-smartphone"></i>
                         </a>
                         <h4><strong>Scienze dell'Amministrazione e dell'Organizzazione</strong></h4>
-                        <p class="text-faded mb-0">Corsi di laurea in Scienze dell'Amministrazione e dell'Organizzazione.</p>
                         <ul id="facolta-scienze-amministrazione-dropdown" class="dropdown-content" style="display:none;">
                             <li><a href="https://wa.me/+393285733478?text=Ciao,+frequento+la+Facolt%C3%A0+di+Scienze+dell'Amministrazione+e+dell'Organizzazione+e+vorrei+fare+ripetizioni+di+Statistica.+Puoi+aiutarmi+?" target="_blank">Statistica</a></li>
                         </ul>
@@ -374,7 +456,6 @@
                             <i class="icon-screen-smartphone"></i>
                         </a>
                         <h4><strong>Scienze delle Attività Motorie, Sportive e dell'Educazione Psicomotoria</strong></h4>
-                        <p class="text-faded mb-0">Corsi di laurea in Scienze delle Attività Motorie, Sportive e dell'Educazione Psicomotoria.</p>
                         <ul id="facolta-scienze-attivita-motorie-dropdown" class="dropdown-content" style="display:none;">
                             <li><a href="https://wa.me/+393285733478?text=Ciao,+frequento+la+Facolt%C3%A0+di+Scienze+delle+Attività+Motorie%2C+Sportive+e+dell'Educazione+Psicomotoria+e+vorrei+fare+ripetizioni+di+Statistica.+Puoi+aiutarmi+?" target="_blank">Statistica</a></li>
                         </ul>
@@ -386,13 +467,13 @@
                             <i class="icon-screen-smartphone"></i>
                         </a>
                         <h4><strong>Scienze e Nanotecnologie per la Sostenibilità</strong></h4>
-                        <p class="text-faded mb-0">Corsi di laurea in Scienze e Nanotecnologie per la Sostenibilità.</p>
                         <ul id="facolta-nanotecnologie-sostenibilita-dropdown" class="dropdown-content" style="display:none;">
-                            <li><a href="https://wa.me/+393285733478?text=Ciao,+frequento+la+Facolt%C3%A0+di+Scienze+e+Nanotecnologie+per+la+Sostenibilità+e+vorrei+fare+ripetizioni+di+Fondamenti+di+Matematica.+Puoi+aiutarmi+?" target="_blank">Fondamenti di Matematica</a></li>
-                            <li><a href="https://wa.me/+393285733478?text=Ciao,+frequento+la+Facolt%C3%A0+di+Scienze+e+Nanotecnologie+per+la+Sostenibilità+e+vorrei+fare+ripetizioni+di+Metodi+Matematici+Avanzati.+Puoi+aiutarmi+?" target="_blank">Metodi Matematici Avanzati</a></li>
-                            <li><a href="https://wa.me/+393285733478?text=Ciao,+frequento+la+Facolt%C3%A0+di+Scienze+e+Nanotecnologie+per+la+Sostenibilità+e+vorrei+fare+ripetizioni+di+Fisica.+Puoi+aiutarmi+?" target="_blank">Fisica</a></li>
-                            <li><a href="https://wa.me/+393285733478?text=Ciao,+frequento+la+Facolt%C3%A0+di+Scienze+e+Nanotecnologie+per+la+Sostenibilità+e+vorrei+fare+ripetizioni+di+Elettromagnetismo.+Puoi+aiutarmi+?" target="_blank">Elettromagnetismo</a></li>
-                            <li><a href="https://wa.me/+393285733478?text=Ciao,+frequento+la+Facolt%C3%A0+di+Scienze+e+Nanotecnologie+per+la+Sostenibilità+e+vorrei+fare+ripetizioni+di+Fisica+e+Tecnologie+Quantistiche.+Puoi+aiutarmi+?" target="_blank">Fisica e Tecnologie Quantistiche</a></li>
+                            <li><a href="https://wa.me/+393285733478?text=Ciao,+frequento+la+Facolt%C3%A0+di+Scienze+e+Nanotecnologie+per+la+Sostenibilit%C3%A0+e+vorrei+fare+ripetizioni+di+Fondamenti+di+Matematica.+Puoi+aiutarmi+?" target="_blank">Fondamenti di Matematica</a></li>
+                            <li><a href="https://wa.me/+393285733478?text=Ciao,+frequento+la+Facolt%C3%A0+di+Scienze+e+Nanotecnologie+per+la+Sostenibilit%C3%A0+e+vorrei+fare+ripetizioni+di+Metodi+Matematici+Avanzati.+Puoi+aiutarmi+?" target="_blank">Metodi Matematici Avanzati</a></li>
+                            <li><a href="https://wa.me/+393285733478?text=Ciao,+frequento+la+Facolt%C3%A0+di+Scienze+e+Nanotecnologie+per+la+Sostenibilit%C3%A0+e+vorrei+fare+ripetizioni+di+Fisica.+Puoi+aiutarmi+?" target="_blank">Fisica</a></li>
+                            <li><a href="https://wa.me/+393285733478?text=Ciao,+frequento+la+Facolt%C3%A0+di+Scienze+e+Nanotecnologie+per+la+Sostenibilit%C3%A0+e+vorrei+fare+ripetizioni+di+Elettromagnetismo.+Puoi+aiutarmi+?" target="_blank">Elettromagnetismo</a></li>
+                            <li><a href="https://wa.me/+393285733478?text=Ciao,+frequento+la+Facolt%C3%A0+di+Scienze+e+Nanotecnologie+per+la+Sostenibilit%C3%A0+e+vorrei+fare+ripetizioni+di+Fisica+e+Tecnologie+Quantistiche.+Puoi+aiutarmi+?" target="_blank">Fisica e Tecnologie Quantistiche</a></li>
+                            <li class="verde-hover"><a href="https://wa.me/+393285733478?text=Ciao,+frequento+la+Facolt%C3%A0+di+Scienze+e+Nanotecnologie+per+la+Sostenibilit%C3%A0+e+vorrei+fare+ripetizioni+di+Laboratorio+di+Informatica.+Puoi+aiutarmi+?" target="_blank">Laboratorio di Informatica</a></li>
                         </ul>
                     </div>
 
@@ -402,7 +483,6 @@
                             <i class="icon-screen-smartphone"></i>
                         </a>
                         <h4><strong>Scienze Politiche e delle Relazioni Internazionali</strong></h4>
-                        <p class="text-faded mb-0">Corsi di laurea in Scienze Politiche e delle Relazioni Internazionali.</p>
                         <ul id="facolta-scienze-politiche-dropdown" class="dropdown-content" style="display:none;">
                             <li><a href="https://wa.me/+393285733478?text=Ciao,+frequento+la+Facolt%C3%A0+di+Scienze+Politiche+e+delle+Relazioni+Internazionali+e+vorrei+fare+ripetizioni+di+Statistica.+Puoi+aiutarmi+?" target="_blank">Statistica</a></li>
                         </ul>
@@ -414,9 +494,9 @@
                             <i class="icon-screen-smartphone"></i>
                         </a>
                         <h4><strong>Sociologia</strong></h4>
-                        <p class="text-faded mb-0">Corsi di laurea in Sociologia.</p>
                         <ul id="facolta-sociologia-dropdown" class="dropdown-content" style="display:none;">
                             <li><a href="https://wa.me/+393285733478?text=Ciao,+frequento+la+Facolt%C3%A0+di+Sociologia+e+vorrei+fare+ripetizioni+di+Statistica.+Puoi+aiutarmi+?" target="_blank">Statistica</a></li>
+                            <li class="verde-hover"><a href="https://wa.me/+393285733478?text=Ciao,+frequento+la+Facolt%C3%A0+di+Sociologia+e+vorrei+fare+ripetizioni+di+Laboratorio+di+Informatica.+Puoi+aiutarmi+?" target="_blank">Laboratorio di Informatica</a></li>
                         </ul>
                     </div>
 
@@ -426,9 +506,14 @@
                             <i class="icon-screen-smartphone"></i>
                         </a>
                         <h4><strong>Statistica per i Big Data</strong></h4>
-                        <p class="text-faded mb-0">Corsi di laurea in Statistica per i Big Data.</p>
                         <ul id="facolta-statistica-bigdata-dropdown" class="dropdown-content" style="display:none;">
                             <li><a href="https://wa.me/+393285733478?text=Ciao,+frequento+la+Facolt%C3%A0+di+Statistica+per+i+Big+Data+e+vorrei+fare+ripetizioni+di+Matematica+Generale.+Puoi+aiutarmi+?" target="_blank">Matematica Generale</a></li>
+                            <li><a href="https://wa.me/+393285733478?text=Ciao,+frequento+la+Facolt%C3%A0+di+Statistica+per+i+Big+Data+e+vorrei+fare+ripetizioni+di+Inferenza+Statistica.+Puoi+aiutarmi+?" target="_blank">Inferenza Statistica</a></li>
+                            <li class="verde-hover"><a href="https://wa.me/+393285733478?text=Ciao,+frequento+la+Facolt%C3%A0+di+Statistica+per+i+Big+Data+e+vorrei+fare+ripetizioni+di+Programmazione.+Puoi+aiutarmi+?" target="_blank">Programmazione</a></li>
+                            <li class="verde-hover"><a href="https://wa.me/+393285733478?text=Ciao,+frequento+la+Facolt%C3%A0+di+Statistica+per+i+Big+Data+e+vorrei+fare+ripetizioni+di+Basi+di+Dati.+Puoi+aiutarmi+?" target="_blank">Basi di Dati</a></li>
+                            <li class="verde-hover"><a href="https://wa.me/+393285733478?text=Ciao,+frequento+la+Facolt%C3%A0+di+Statistica+per+i+Big+Data+e+vorrei+fare+ripetizioni+di+Algoritmi+e+strutture+dati.+Puoi+aiutarmi+?" target="_blank">Algoritmi e strutture dati</a></li>
+                            <li class="verde-hover"><a href="https://wa.me/+393285733478?text=Ciao,+frequento+la+Facolt%C3%A0+di+Statistica+per+i+Big+Data+e+vorrei+fare+ripetizioni+di+Architetture+per+i+Big+Data.+Puoi+aiutarmi+?" target="_blank">Architetture per i Big Data</a></li>
+                            <li class="verde-hover"><a href="https://wa.me/+393285733478?text=Ciao,+frequento+la+Facolt%C3%A0+di+Statistica+per+i+Big+Data+e+vorrei+fare+ripetizioni+di+Progettazione+del+software.+Puoi+aiutarmi+?" target="_blank">Progettazione del software</a></li>
                         </ul>
                     </div>
 
@@ -438,9 +523,14 @@
                             <i class="icon-screen-smartphone"></i>
                         </a>
                         <h4><strong>Studi Diplomatici, Internazionali e sulla Sicurezza Globale</strong></h4>
-                        <p class="text-faded mb-0">Corsi di laurea in Studi Diplomatici, Internazionali e sulla Sicurezza Globale.</p>
                         <ul id="facolta-studi-diplomatici-dropdown" class="dropdown-content" style="display:none;">
                             <li><a href="https://wa.me/+393285733478?text=Ciao,+frequento+la+Facolt%C3%A0+di+Studi+Diplomatici%2C+Internazionali+e+sulla+Sicurezza+Globale+e+vorrei+fare+ripetizioni+di+Statistica.+Puoi+aiutarmi+?" target="_blank">Statistica</a></li>
+                            <li><a href="https://wa.me/+393285733478?text=Ciao,+frequento+la+Facolt%C3%A0+di+Studi+Diplomatici%2C+Internazionali+e+sulla+Sicurezza+Globale+e+vorrei+fare+ripetizioni+di+Metodi+e+Tecniche+di+Matematica.+Puoi+aiutarmi+?" target="_blank">Metodi e Tecniche di Matematica</a></li>
+                            <li class="verde-hover"><a href="https://wa.me/+393285733478?text=Ciao,+frequento+la+Facolt%C3%A0+di+Studi+Diplomatici%2C+Internazionali+e+sulla+Sicurezza+Globale+e+vorrei+fare+ripetizioni+di+Informatica+di+base.+Puoi+aiutarmi+?" target="_blank">Informatica di base</a></li>                        
+                            <li class="verde-hover"><a href="https://wa.me/+393285733478?text=Ciao,+frequento+la+Facolt%C3%A0+di+Studi+Diplomatici%2C+Internazionali+e+sulla+Sicurezza+Globale+e+vorrei+fare+ripetizioni+di+Tecniche+di+base+di+programmazione.+Puoi+aiutarmi+?" target="_blank">Tecniche di base di programmazione</a></li>                        
+                            <li class="verde-hover"><a href="https://wa.me/+393285733478?text=Ciao,+frequento+la+Facolt%C3%A0+di+Studi+Diplomatici%2C+Internazionali+e+sulla+Sicurezza+Globale+e+vorrei+fare+ripetizioni+di+Tecniche+di+programmazione+per+la+sicurezza+dei+sistemi.+Puoi+aiutarmi+?" target="_blank">Tecniche di programmazione per la sicurezza dei sistemi</a></li>                        
+                            <li class="verde-hover"><a href="https://wa.me/+393285733478?text=Ciao,+frequento+la+Facolt%C3%A0+di+Studi+Diplomatici%2C+Internazionali+e+sulla+Sicurezza+Globale+e+vorrei+fare+ripetizioni+di+Tecniche+di+base+per+la+cybersecurity+e+cyberintelligence.+Puoi+aiutarmi+?" target="_blank">Tecniche di base per la cybersecurity e cyberintelligence</a></li>                        
+
                         </ul>
                     </div>
 
@@ -450,9 +540,9 @@
                             <i class="icon-screen-smartphone"></i>
                         </a>
                         <h4><strong>Tecniche di Radiologia Medica, per Immagini e Radioterapia</strong></h4>
-                        <p class="text-faded mb-0">Corsi di laurea in Tecniche di Radiologia Medica, per Immagini e Radioterapia.</p>
                         <ul id="facolta-tecniche-radiologia-dropdown" class="dropdown-content" style="display:none;">
                             <li><a href="https://wa.me/+393285733478?text=Ciao,+frequento+la+Facolt%C3%A0+di+Tecniche+di+Radiologia+Medica%2C+per+Immagini+e+Radioterapia+e+vorrei+fare+ripetizioni+di+Scienze+Fisico-Statistiche.+Puoi+aiutarmi+?" target="_blank">Scienze Fisico-Statistiche</a></li>
+                            <li class="verde-hover"><a href="https://wa.me/+393285733478?text=Ciao,+frequento+la+Facolt%C3%A0+di+Radiologia+Medica%2C+per+Immagini+e+Radioterapia+e+vorrei+fare+ripetizioni+di+Informatica.+Puoi+aiutarmi+?" target="_blank">Informatica</a></li>
                         </ul>
                     </div>
 
@@ -462,9 +552,9 @@
                             <i class="icon-screen-smartphone"></i>
                         </a>
                         <h4><strong>Tecniche Erboristiche</strong></h4>
-                        <p class="text-faded mb-0">Corsi di laurea in Tecniche Erboristiche.</p>
                         <ul id="facolta-tecniche-erboristiche-dropdown" class="dropdown-content" style="display:none;">
                             <li><a href="https://wa.me/+393285733478?text=Ciao,+frequento+la+Facolt%C3%A0+di+Tecniche+Erboristiche+e+vorrei+fare+ripetizioni+di+Fisica-Matematica.+Puoi+aiutarmi+?" target="_blank">Fisica-Matematica</a></li>
+                            <li class="verde-hover"><a href="https://wa.me/+393285733478?text=Ciao,+frequento+la+Facolt%C3%A0+di+Tecniche+Erboristiche+e+vorrei+fare+ripetizioni+di+Abilità+informatiche.+Puoi+aiutarmi+?" target="_blank">Abilità informatiche</a></li>
                         </ul>
                     </div>
 
@@ -474,7 +564,6 @@
                             <i class="icon-screen-smartphone"></i>
                         </a>
                         <h4><strong>Tecniche per l'Edilizia e il Territorio</strong></h4>
-                        <p class="text-faded mb-0">Corsi di laurea in Tecniche per l'Edilizia e il Territorio.</p>
                         <ul id="facolta-tecniche-edilizia-dropdown" class="dropdown-content" style="display:none;">
                             <li><a href="https://wa.me/+393285733478?text=Ciao,+frequento+la+Facolt%C3%A0+di+Tecniche+per+l'Edilizia+e+il+Territorio+e+vorrei+fare+ripetizioni+di+Fondamenti+di+Matematica.+Puoi+aiutarmi+?" target="_blank">Fondamenti di Matematica</a></li>
                         </ul>
@@ -486,7 +575,6 @@
                             <i class="icon-screen-smartphone"></i>
                         </a>
                         <h4><strong>Chimica e Tecnologia Farmaceutiche</strong></h4>
-                        <p class="text-faded mb-0">Corsi di laurea in Chimica e Tecnologia Farmaceutiche.</p>
                         <ul id="facolta-chimica-tecnologia-dropdown" class="dropdown-content" style="display:none;">
                             <li><a href="https://wa.me/+393285733478?text=Ciao,+frequento+la+Facolt%C3%A0+di+Chimica+e+Tecnologia+Farmaceutiche+e+vorrei+fare+ripetizioni+di+Matematica.+Puoi+aiutarmi+?" target="_blank">Matematica</a></li>
                             <li><a href="https://wa.me/+393285733478?text=Ciao,+frequento+la+Facolt%C3%A0+di+Chimica+e+Tecnologia+Farmaceutiche+e+vorrei+fare+ripetizioni+di+Fisica.+Puoi+aiutarmi+?" target="_blank">Fisica</a></li>
@@ -499,9 +587,10 @@
                             <i class="icon-screen-smartphone"></i>
                         </a>
                         <h4><strong>Farmacia</strong></h4>
-                        <p class="text-faded mb-0">Corsi di laurea in Farmacia.</p>
                         <ul id="facolta-farmacia-dropdown" class="dropdown-content" style="display:none;">
                             <li><a href="https://wa.me/+393285733478?text=Ciao,+frequento+la+Facolt%C3%A0+di+Farmacia+e+vorrei+fare+ripetizioni+di+Fisica+ed+elementi+di+Matematica.+Puoi+aiutarmi+?" target="_blank">Fisica ed elementi di Matematica</a></li>
+                            <li class="verde-hover"><a href="https://wa.me/+393285733478?text=Ciao,+frequento+la+Facolt%C3%A0+di+Farmacia+e+vorrei+fare+ripetizioni+di+Attività+Informatiche.+Puoi+aiutarmi+?" target="_blank">Attività Informatiche</a></li>
+                            <li class="verde-hover"><a href="https://wa.me/+393285733478?text=Ciao,+frequento+la+Facolt%C3%A0+di+Farmacia+e+vorrei+fare+ripetizioni+di+Abilità+Informatiche.+Puoi+aiutarmi+?" target="_blank">Abilità Informatiche</a></li>
                         </ul>
                     </div>
 
@@ -511,7 +600,6 @@
                             <i class="icon-screen-smartphone"></i>
                         </a>
                         <h4><strong>Ingegneria Edile-Architettura</strong></h4>
-                        <p class="text-faded mb-0">Corsi di laurea in Ingegneria Edile-Architettura.</p>
                         <ul id="facolta-ingegneria-edile-dropdown" class="dropdown-content" style="display:none;">
                             <li><a href="https://wa.me/+393285733478?text=Ciao,+frequento+la+Facolt%C3%A0+di+Ingegneria+Edile-Architettura+e+vorrei+fare+ripetizioni+di+Analisi+Matematica+1.+Puoi+aiutarmi+?" target="_blank">Analisi Matematica 1</a></li>
                             <li><a href="https://wa.me/+393285733478?text=Ciao,+frequento+la+Facolt%C3%A0+di+Ingegneria+Edile-Architettura+e+vorrei+fare+ripetizioni+di+Analisi+Matematica+2.+Puoi+aiutarmi+?" target="_blank">Analisi Matematica 2</a></li>
@@ -526,7 +614,6 @@
                             <i class="icon-screen-smartphone"></i>
                         </a>
                         <h4><strong>Scienze della Formazione Primaria</strong></h4>
-                        <p class="text-faded mb-0">Corsi di laurea in Scienze della Formazione Primaria.</p>
                         <ul id="facolta-scienze-formazione-dropdown" class="dropdown-content" style="display:none;">
                             <li><a href="https://wa.me/+393285733478?text=Ciao,+frequento+la+Facolt%C3%A0+di+Scienze+della+Formazione+Primaria+e+vorrei+fare+ripetizioni+di+Matematica+di+base+e+didattica+della+matematica.+Puoi+aiutarmi+?" target="_blank">Matematica di base e didattica della matematica</a></li>
                             <li><a href="https://wa.me/+393285733478?text=Ciao,+frequento+la+Facolt%C3%A0+di+Scienze+della+Formazione+Primaria+e+vorrei+fare+ripetizioni+di+Laboratorio+di+Matematica.+Puoi+aiutarmi+?" target="_blank">Laboratorio di Matematica</a></li>
@@ -542,7 +629,6 @@
                             <i class="icon-screen-smartphone"></i>
                         </a>
                         <h4><strong>Medicina e Chirurgia</strong></h4>
-                        <p class="text-faded mb-0">Corsi di laurea in Medicina e Chirurgia.</p>
                         <ul id="facolta-medicina-dropdown" class="dropdown-content" style="display:none;">
                             <li><a href="https://wa.me/+393285733478?text=Ciao,+frequento+la+Facolt%C3%A0+di+Medicina+e+Chirurgia+e+vorrei+fare+ripetizioni+di+Fisica+Medica.+Puoi+aiutarmi+?" target="_blank">Fisica Medica</a></li>
                             <li><a href="https://wa.me/+393285733478?text=Ciao,+frequento+la+Facolt%C3%A0+di+Medicina+e+Chirurgia+e+vorrei+fare+ripetizioni+di+Statistica+Medica+e+Informatica.+Puoi+aiutarmi+?" target="_blank">Statistica Medica e Informatica</a></li>
@@ -567,6 +653,72 @@
                 <h3 class="mb-5"style="color: white; text-shadow: 2px 2px 4px black;"><em>Grazie per averci scelto ! Vi invitiamo a esplorare il mondo avvincente della Fisica e della Matematica con noi. Insegniamo Matematica e Fisica da più di 10 anni. Nel corso della nostra carriera abbiamo avuto più di 1000 alunni, tutti eccellenti, che dopo alcune lezioni hanno preso così a cuore la materia, da appassionarsi ad essa, e approfondire tante piccole bellezze riguardanti questi fantastici campi di studio, con tanto entusiasmo! Grazie di cuore ! <i class="fas fa-heart" style="color: red;"></i></em></h3>
             </div>
         </div>
+
+
+        <!-- Customer Reviews Section -->
+            <section class="customer-reviews py-5" id="reviews">
+                <div class="container px-4 px-lg-5 text-center">
+                    <h2 class="mb-4">Cosa dicono i nostri studenti</h2>
+                    <div class="row">
+                        <!-- Review 1 -->
+                        <div class="col-lg-4">
+                            <div class="review">
+                                <img src="assets/faces/marco.jpg" alt="Foto di Marco" class="rounded-circle mb-3" width="100" height="100">
+                                <p class="mb-0">"Le lezioni di Fisica mi hanno aperto la mente! Grazie a Unilessons ho finalmente capito concetti complessi in modo semplice e chiaro."</p>
+                                <h5 class="mt-2">- Marco</h5>
+                            </div>
+                        </div>
+                        <!-- Review 2 -->
+                        <div class="col-lg-4">
+                            <div class="review">
+                                <img src="assets/faces/giulia.jpg" alt="Foto di Giulia" class="rounded-circle mb-3" width="100" height="100">
+                                <p class="mb-0">"Un modo di insegnare che rende la Matematica affascinante. Non avrei mai pensato di appassionarmi così tanto!"</p>
+                                <h5 class="mt-2">- Giulia</h5>
+                            </div>
+                        </div>
+                        <!-- Review 3 -->
+                        <div class="col-lg-4">
+                            <div class="review">
+                                <img src="assets/faces/luca.jpg" alt="Foto di Luca" class="rounded-circle mb-3" width="100" height="100">
+                                <p class="mb-0">"Insegnanti competenti e sempre disponibili. Mi hanno aiutato a superare esami difficilissimi con sicurezza."</p>
+                                <h5 class="mt-2">- Luca</h5>
+                            </div>
+                        </div>
+                        <!-- Review 4 -->
+                        <div class="col-lg-4">
+                            <div class="review">
+                                <img src="assets/faces/sara.jpg" alt="Foto di Sara" class="rounded-circle mb-3" width="100" height="100">
+                                <p class="mb-0">"Non avrei mai pensato di riuscire a risolvere problemi così complessi in Fisica. Le spiegazioni di Unilessons sono sempre chiare e precise."</p>
+                                <h5 class="mt-2">- Sara</h5>
+                            </div>
+                        </div>
+                        <!-- Review 5 -->
+                        <div class="col-lg-4">
+                            <div class="review">
+                                <img src="assets/faces/davide.jpg" alt="Foto di Davide" class="rounded-circle mb-3" width="100" height="100">
+                                <p class="mb-0">"Unilessons mi ha aiutato a migliorare i miei voti in Matematica in poche settimane. Consigliatissimo per chi vuole risultati concreti!"</p>
+                                <h5 class="mt-2">- Davide</h5>
+                            </div>
+                        </div>
+                        <!-- Review 6 -->
+                        <div class="col-lg-4">
+                            <div class="review">
+                                <img src="assets/faces/elena.jpeg" alt="Foto di Elena" class="rounded-circle mb-3" width="100" height="100">
+                                <p class="mb-0">"Ho iniziato le lezioni con Unilessons senza aspettative, ma ora la Fisica è diventata la mia passione. Grazie per il fantastico supporto!"</p>
+                                <h5 class="mt-2">- Elena</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+                </div>
+            </div>
+        </section>
+
+
+
+
         <!-- Footer-->
         <footer class="footer text-center">
             <div class="container px-4 px-lg-5">
@@ -604,6 +756,10 @@
             </div>
         </footer>
         <!-- Scroll to Top Button-->
+         <!-- Pulsante di scroll verso la navbar -->
+        <a class="scroll-to-navbar rounded" href="#services">
+            <i class="fas fa-angle-up"></i>
+        </a>      
         <a class="scroll-to-top rounded" href="#page-top"><i class="fas fa-angle-up"></i></a>
         <!-- Bootstrap core JS-->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
