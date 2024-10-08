@@ -11151,6 +11151,11 @@ footer.footer .social-link:hover {
   border-radius: 3px;
 }
 
+.orange-hover:hover {
+  background-color: orange; /* Colore di sfondo verde */
+  color: black; /* Colore del testo */
+  border-radius: 3px;
+}
 
 
 .scroll-to-navbar {
@@ -11180,3 +11185,45 @@ footer.footer .social-link:hover {
 .rounded-circle {
   border-radius: 50%;
 }
+
+
+
+
+
+
+
+
+
+.faculty-exams {
+  display: flex;
+  flex-wrap: wrap; /* Permette di andare a capo se lo spazio è limitato */
+  justify-content: space-around; /* Spazia uniformemente le icone */
+}
+
+.faculty-exams a {
+  text-align: center;
+  display: flex; /* Aggiunto per gestire il layout interno */
+  flex-direction: column; /* Imposta la direzione del layout a colonna */
+  align-items: center; /* Allinea gli elementi al centro */
+  padding: 20px; /* Spazio attorno all'ancora per separare visivamente gli elementi */
+  color: white; /* Colore del testo */
+  text-decoration: none; /* Rimuove la sottolineatura dal link */
+  background-color: rgba(20, 123, 255, 0.1);
+}
+
+.faculty-exams a i {
+  font-size: 3em; /* Dimensione dell'icona */
+  margin-bottom: 10px; /* Spazio tra l'icona e il testo */
+}
+
+.faculty-exams h4 {
+  margin-top: 10px; /* Spazio tra l'icona e il testo */
+  font-size: 1.2em; /* Dimensione del font per il testo */
+  color: white; /* Colore del testo */
+}
+
+/* Aggiungi uno sfondo e una leggera ombra per migliorare la leggibilità */
+.faculty-exams a:hover {
+  background-color: rgba(0, 123, 255, 0.1); /* Colore di sfondo leggero al passaggio */
+}
+
