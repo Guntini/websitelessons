@@ -84,36 +84,22 @@ function fadeIn(el, display) {
 
 
 
-
 function toggleDropdown(dropdownId) {
-    // Trova tutti gli elementi con la classe 'dropdown-content'
-    var dropdowns = document.getElementsByClassName('dropdown-content');
-    
-    // Chiudi tutte le tendine aperte
+    // Nascondi tutte le tendine
+    var dropdowns = document.getElementsByClassName('faculty-exams');
     for (var i = 0; i < dropdowns.length; i++) {
-      if (dropdowns[i].id !== dropdownId) {
         dropdowns[i].style.display = "none";
-      }
     }
-    
-    // Alterna la visibilità della tendina selezionata
+
+    // Mostra solo la tendina selezionata
     var dropdown = document.getElementById(dropdownId);
     if (dropdown.style.display === "none" || dropdown.style.display === "") {
-      dropdown.style.display = "block";
+        dropdown.style.display = "block";
       
-     // Scorri fino alla tendina
-     dropdown.scrollIntoView({ behavior: "smooth" });
-
-     // Aggiungi un piccolo ritardo per assicurarti che lo scroll iniziale sia completato
-     setTimeout(function() {
-       // Applica un offset per fermarti più in alto (es. 100px)
-       window.scrollBy(0, -300);
-     }, 500); // Il ritardo di 300 ms dovrebbe essere sufficiente per un'animazione fluida
-    } else {
-        dropdown.style.display = "none";
+        // Scorri fino alla tendina
+        dropdown.scrollIntoView({ behavior: "smooth" });
     }
 }
-
 
 
 
