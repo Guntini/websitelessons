@@ -83,12 +83,16 @@ function fadeIn(el, display) {
 
 function handleSelectChange(select) {
     const selectedValue = select.value;
-    if (selectedValue) {
-        toggleDropdown(selectedValue);
+    const defaultMessageDiv = document.getElementById('default-message');
+
+    // Mostra o nascondi il div in base alla selezione
+    if (selectedValue === "Scegli un corso") {
+        defaultMessageDiv.style.display = "block"; // Mostra il div
+    } else {
+        defaultMessageDiv.style.display = "none"; // Nascondi il div
+        toggleDropdown(selectedValue); // Gestisci la tendina selezionata
     }
 }
-
-
 
 function toggleDropdown(dropdownId) {
     // Nascondi tutte le tendine
@@ -99,12 +103,11 @@ function toggleDropdown(dropdownId) {
 
     // Mostra solo la tendina selezionata
     var dropdown = document.getElementById(dropdownId);
-    if (dropdown){
+    if (dropdown) {
         dropdown.style.display = "block";
-      
-        
     }
 }
+
 
 
 
