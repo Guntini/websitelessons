@@ -11223,3 +11223,24 @@ footer.footer .social-link:hover {
   background-color: rgba(0, 123, 255, 0.1); /* Colore di sfondo leggero al passaggio */
 }
 
+
+
+/* Stile personalizzato per il select */
+.form-select {
+  background-color: #f8f9fa; /* Colore di sfondo */
+  color: #333; /* Colore del testo */
+  border: 2px solid #007bff; /* Colore del bordo */
+  border-radius: 5px; /* Angoli arrotondati */
+  padding: 10px; /* Padding interno */
+  transition: border-color 0.3s; /* Transizione del colore del bordo */
+}
+
+.form-select:hover {
+  border-color: #0056b3; /* Colore del bordo al passaggio del mouse */
+}
+
+.form-select:focus {
+  outline: none; /* Rimuove il contorno predefinito */
+  border-color: #0056b3; /* Colore del bordo al focus */
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); /* Ombra al focus */
+}
