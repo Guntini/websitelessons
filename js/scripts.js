@@ -81,6 +81,12 @@ function fadeIn(el, display) {
 
 
 
+function handleSelectChange(select) {
+    const selectedValue = select.value;
+    if (selectedValue) {
+        toggleDropdown(selectedValue);
+    }
+}
 
 
 
