@@ -11145,14 +11145,10 @@ footer.footer .social-link:hover {
 }
 
 
-.verde-hover:hover {
-  background-color: green; /* Colore di sfondo verde */
-  color: black; /* Colore del testo */
-  border-radius: 3px;
-}
 
-.orange-hover:hover {
-  background-color: orange; /* Colore di sfondo verde */
+
+.white-hover:hover {
+  background-color: white; /* Colore di sfondo verde */
   color: black; /* Colore del testo */
   border-radius: 3px;
 }
