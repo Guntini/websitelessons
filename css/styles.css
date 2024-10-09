@@ -11201,7 +11201,7 @@ footer.footer .social-link:hover {
   display: flex; /* Aggiunto per gestire il layout interno */
   flex-direction: column; /* Imposta la direzione del layout a colonna */
   align-items: center; /* Allinea gli elementi al centro */
-  padding: 20px; /* Spazio attorno all'ancora per separare visivamente gli elementi */
+  padding: 40px; /* Spazio attorno all'ancora per separare visivamente gli elementi */
   color: white; /* Colore del testo */
   text-decoration: none; /* Rimuove la sottolineatura dal link */
   background-color: rgba(20, 123, 255, 0.1);
