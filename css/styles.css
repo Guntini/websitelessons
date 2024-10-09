@@ -11209,7 +11209,7 @@ footer.footer .social-link:hover {
 
 .faculty-exams a i {
   font-size: 3em; /* Dimensione dell'icona */
-  margin-bottom: 10px; /* Spazio tra l'icona e il testo */
+  /*margin-bottom: 10px; /* Spazio tra l'icona e il testo */
 }
 
 .faculty-exams h4 {
