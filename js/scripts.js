@@ -96,8 +96,7 @@ function toggleDropdown(dropdownId) {
     if (dropdown.style.display === "none" || dropdown.style.display === "") {
         dropdown.style.display = "block";
       
-        // Scorri fino alla tendina
-        dropdown.scrollIntoView({ behavior: "smooth" });
+        
     }
 }
 
