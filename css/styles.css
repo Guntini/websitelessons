@@ -11250,3 +11250,8 @@ footer.footer .social-link:hover {
 p {
   padding-top: 70px; /* Aumenta o diminuisci il valore come necessario */
 }
+
+small {
+  padding-top: 40px; /* Aumenta o diminuisci il valore come necessario */
+}
+
