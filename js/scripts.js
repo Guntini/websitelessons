@@ -83,12 +83,20 @@ function fadeIn(el, display) {
 
 function handleSelectChange(select) {
     const selectedValue = select.value;
-    if (selectedValue) {
+
+    // Controllo per l'opzione predefinita
+    const defaultImage = document.getElementById("default-image");
+    
+    if (selectedValue === "default") {
+        // Se è selezionata l'opzione predefinita, mostra l'immagine
+        defaultImage.style.display = "block";
+    } else {
+        // Nascondi l'immagine quando viene selezionato un corso
+        defaultImage.style.display = "none";
+        // Esegui la funzione per mostrare il dropdown
         toggleDropdown(selectedValue);
     }
 }
-
-
 
 function toggleDropdown(dropdownId) {
     // Nascondi tutte le tendine
@@ -99,14 +107,10 @@ function toggleDropdown(dropdownId) {
 
     // Mostra solo la tendina selezionata
     var dropdown = document.getElementById(dropdownId);
-    if (dropdown){
+    if (dropdown) {
         dropdown.style.display = "block";
-      
-        
     }
 }
-
-
 
 // Mostra il pulsante quando si scrolla
 window.onscroll = function() {

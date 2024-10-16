@@ -79,7 +79,7 @@
                             <div class="col-md-6 text-start">
                                 <h3>Lezioni individuali in tutte le materie</h3>
                                 <p>Ogni studente impara in modo diverso. Le ripetizioni personalizzate nella nostra aula virtuale interattiva consentono di colmare qualsiasi lacuna di apprendimento. 
-                                Ricevi 50 minuti di supporto esclusivo da parte di un tutor in grado di adattare la lezione al tuo stile di apprendimento.</p>
+                                Ricevi 60 minuti di supporto esclusivo da parte di un tutor in grado di adattare la lezione al tuo stile di apprendimento.</p>
                             </div>
                         </div>
 
@@ -108,7 +108,7 @@
                 <h2 class="mb-5">Seleziona il tuo corso</h2>
                 <div class="dropdown mb-4">
                 <select class="form-select form-select-lg" aria-label="Seleziona un corso" onchange="handleSelectChange(this)">
-                    <option selected>Scegli un corso</option>
+                    <option selected value="default">Scegli un corso</option>
                     <option value="facolta-chimica-dropdown">Chimica</option>
                     <option value="facolta-economia-aziendale-dropdown">Economia Aziendale</option>
                     <option value="facolta-economia-e-commercio-dropdown">Economia e Commercio</option>
@@ -151,6 +151,9 @@
                 </h2>
                 <p class="p"> </p>
                 
+                <!-- Aggiungi un'immagine con un ID specifico -->
+                <img id="default-image" src="path-to-your-image.jpg" alt="Immagine predefinita" style="display: block;">
+
                 <div class="row gx-4 gx-lg-5">
                     <!-- Chimica -->
                     <div id="facolta-chimica-dropdown" class="faculty-exams" style="display:none;">
