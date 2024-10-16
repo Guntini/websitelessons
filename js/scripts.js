@@ -80,30 +80,36 @@ function fadeIn(el, display) {
 };
 
 
-
 function handleSelectChange(select) {
     const selectedValue = select.value;
 
-    // Controllo per l'opzione predefinita
+    // Riferimento all'immagine predefinita
     const defaultImage = document.getElementById("default-image");
-    
+
     if (selectedValue === "default") {
-        // Se è selezionata l'opzione predefinita, mostra l'immagine
+        // Mostra l'immagine predefinita
         defaultImage.style.display = "block";
+        // Nascondi tutte le tendine dei corsi
+        hideAllDropdowns();
     } else {
-        // Nascondi l'immagine quando viene selezionato un corso
+        // Nascondi l'immagine predefinita
         defaultImage.style.display = "none";
-        // Esegui la funzione per mostrare il dropdown
+        // Mostra solo il dropdown selezionato
         toggleDropdown(selectedValue);
+    }
+}
+
+function hideAllDropdowns() {
+    // Nascondi tutte le tendine dei corsi
+    var dropdowns = document.getElementsByClassName('faculty-exams');
+    for (var i = 0; i < dropdowns.length; i++) {
+        dropdowns[i].style.display = "none";
     }
 }
 
 function toggleDropdown(dropdownId) {
     // Nascondi tutte le tendine
-    var dropdowns = document.getElementsByClassName('faculty-exams');
-    for (var i = 0; i < dropdowns.length; i++) {
-        dropdowns[i].style.display = "none";
-    }
+    hideAllDropdowns();
 
     // Mostra solo la tendina selezionata
     var dropdown = document.getElementById(dropdownId);
